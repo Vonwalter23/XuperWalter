@@ -1,0 +1,7 @@
+# Ignore large decompiled folder
+XP_TV_decompiled/
+
+# Ignore any other APKs except the tracked ones
+*.apk
+!XP_TV.apk
+!XP_TV_signed.apk
