@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0px" android:textColor="@color/selector_color_actor" android:id="@id/tvSource" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.0px" android:layout_marginRight="20.0px" />
+    <com.widget.recyclerView.RecyclerViewTV android:id="@id/rvAudioList" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.zhy.autolayout.AutoLinearLayout>

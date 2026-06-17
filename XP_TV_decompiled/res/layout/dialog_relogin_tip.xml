@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog_brasiliptv" android:layout_width="980.0px" android:layout_height="520.0px">
+        <TextView android:textSize="40.0px" android:textColor="#ffffffff" android:gravity="center" android:id="@id/mDialogTitle" android:background="@drawable/dialog_title_bg" android:layout_width="fill_parent" android:layout_height="100.0px" android:text="@string/account_tips" />
+        <TextView android:textSize="32.0px" android:textColor="@color/color_ffffffff" android:gravity="center" android:paddingLeft="80.0px" android:paddingRight="80.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="180.0px" android:text="@string/account_relogin_content" />
+        <com.zhy.autolayout.AutoLinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:id="@id/mBtnReLogin" android:layout_marginBottom="60.0px" android:text="@string/account_relogin" style="@style/button_double_style" />
+            <Button android:id="@id/mBtnExit" android:layout_marginLeft="60.0px" android:text="@string/exit" style="@style/button_double_style" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

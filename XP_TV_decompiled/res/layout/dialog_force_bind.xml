@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:id="@id/mLayoutError" android:background="@drawable/bg_dialog_brasiliptv" android:layout_width="980.0px" android:layout_height="540.0px">
+        <TextView android:textSize="40.0px" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/mTvTitle" android:background="@drawable/dialog_title_bg" android:layout_width="fill_parent" android:layout_height="100.0px" android:text="@string/title_force_bind" />
+        <TextView android:textSize="28.0px" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mTvForceTip" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginLeft="72.0px" android:layout_marginRight="72.0px" android:text="@string/tip_force_bind_force" android:layout_weight="1.0" />
+        <com.zhy.autolayout.AutoFrameLayout android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="80.0px" android:layout_marginBottom="60.0px">
+            <TextView android:textSize="32.0px" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mBtnLoginOther" android:background="@drawable/sel_bg_force_bind_btn_normal" android:focusable="true" android:layout_width="380.0px" android:layout_height="80.0px" android:layout_marginLeft="74.0px" android:text="@string/account_login_another" />
+            <TextView android:textSize="32.0px" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="right" android:id="@id/mBtnBind" android:background="@drawable/sel_bg_force_bind_btn_normal" android:focusable="true" android:layout_width="380.0px" android:layout_height="80.0px" android:layout_marginRight="74.0px" android:text="@string/force_to_binding" />
+        </com.zhy.autolayout.AutoFrameLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="123.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:layout_gravity="center_horizontal" android:id="@id/llCentreItem" android:background="@drawable/selector_kid_category_left" android:layout_width="344.0px" android:layout_height="81.0px">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ivIcon" android:layout_width="80.0px" android:layout_height="70.0px" />
+        <TextView android:textSize="32.0px" android:textColor="@color/color_0a6638" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/tvName" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="17.0px" android:layout_marginRight="20.0px" android:text="@string/search" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoFrameLayout>

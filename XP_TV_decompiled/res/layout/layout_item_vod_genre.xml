@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:background="@drawable/vod_selector_bg_genre" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="38.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="28.0px" android:textColor="@color/color_vod_genre_bg" android:ellipsize="marquee" android:gravity="center" android:id="@id/mTvGenre" android:paddingLeft="10.0px" android:paddingRight="10.0px" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="660.0px" android:text="Amazing" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+</com.zhy.autolayout.AutoFrameLayout>

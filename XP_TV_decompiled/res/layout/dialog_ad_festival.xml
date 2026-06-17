@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/mIvAd" android:layout_width="853.0dip" android:layout_height="480.0dip" android:scaleType="centerCrop" />
+    <com.module.view.LoadingView android:layout_gravity="center" android:id="@id/mLoadingView" android:visibility="gone" android:layout_width="66.0dip" android:layout_height="66.0dip" />
+    <Button android:layout_gravity="bottom|center" android:id="@id/mBtnOk" android:background="@drawable/selector_dialog_btn_exit" android:layout_width="280.0dip" android:layout_height="45.0dip" android:layout_marginBottom="50.0dip" android:text="@string/dialog_guide_ok" style="@style/button_single_style" />
+</FrameLayout>

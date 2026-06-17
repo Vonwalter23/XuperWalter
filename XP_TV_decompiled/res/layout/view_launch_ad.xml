@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.adimage.view.TraceAdImageView android:id="@id/mIvAd" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/mTvCountDown" android:background="@drawable/bg_launch_ad_count_down" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="41.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="26.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="bottom|center|right" android:id="@id/mTvVersion" android:background="@drawable/bg_launch_ad_version" android:paddingLeft="2.0dip" android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="26.0dip" android:layout_marginBottom="40.0dip" />
+</merge>

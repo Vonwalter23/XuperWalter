@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_brasiliptv" android:layout_width="980.0px" android:layout_height="580.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mDialogTitle" android:layout_width="fill_parent" android:layout_height="80.0px" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/color_f5f5f5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0px" android:layout_marginTop="40.0px" android:text="@string/content_msg_str" />
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0px" android:layout_marginTop="20.0px" android:layout_marginRight="40.0px">
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_a8a8a8" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/program_title_str" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_ffaa00" android:id="@id/mProgramTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0px" android:layout_marginTop="20.0px" android:layout_marginRight="40.0px">
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_a8a8a8" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/push_msg_content" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_f5f5f5" android:id="@id/mProgramUpdateContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:lineSpacingExtra="5.0px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoRelativeLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0px">
+        <Button android:textSize="16.0sp" android:textColor="@color/text_color" android:gravity="center" android:id="@id/mBtnToWatch" android:background="@drawable/selector_dialog_btn_account" android:layout_width="320.0px" android:layout_height="58.0px" android:text="@string/watch_now" android:layout_alignParentBottom="true" android:textAllCaps="false" />
+        <Button android:textSize="16.0sp" android:textColor="@color/text_color" android:gravity="center" android:id="@id/mBtnToReturn" android:background="@drawable/selector_dialog_btn_account" android:layout_width="320.0px" android:layout_height="58.0px" android:layout_marginLeft="58.0px" android:text="@string/info_exit" android:layout_toRightOf="@id/mBtnToWatch" android:layout_alignParentBottom="true" android:textAllCaps="false" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

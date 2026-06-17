@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_tigre" android:paddingTop="14.0dip" android:layout_width="613.0dip" android:layout_height="360.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.swlauthnew.view.CustomTextView android:textSize="23.0dip" android:textColor="@color/color_ceddf3" android:gravity="center|left" android:id="@id/mTextTitle" android:paddingLeft="35.0dip" android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_marginRight="30.0dip" android:text="@string/enter_code_new" style="@style/marquee_textview" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/mLayoutInputCode" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="67.0dip">
+        <EditText android:id="@id/mEditFirst" android:nextFocusForward="@id/mEditSecond" style="@style/edit_input_code_tigre" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/icon_between_line" />
+        <EditText android:id="@id/mEditSecond" android:nextFocusForward="@id/mEditThird" style="@style/edit_input_code_tigre" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/icon_between_line" />
+        <EditText android:id="@id/mEditThird" android:nextFocusForward="@id/mEditFourth" style="@style/edit_input_code_tigre" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/icon_between_line" />
+        <EditText android:id="@id/mEditFourth" android:nextFocusForward="@id/mButtonConfirm" style="@style/edit_input_code_tigre" />
+    </LinearLayout>
+    <TextView android:textSize="23.0dip" android:textColor="@color/color_ceddf3" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/mTextShowCode" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="77.0dip" android:text="2514-5874-6587-2541" android:singleLine="true" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/mLayoutButton" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="63.0dip">
+        <Button android:textSize="19.0dip" android:textColor="@color/color_ceddf3" android:gravity="center" android:id="@id/mButtonCancelOrReEnter" android:background="@drawable/bg_btn_tigre_selector" android:layout_width="133.0dip" android:layout_height="45.0dip" android:text="@string/button_cancel_new" />
+        <Button android:textSize="19.0dip" android:textColor="@color/color_ceddf3" android:gravity="center" android:id="@id/mButtonConfirm" android:background="@drawable/bg_btn_tigre_selector" android:layout_width="133.0dip" android:layout_height="45.0dip" android:layout_marginLeft="67.0dip" android:text="@string/button_confirm_new" />
+    </LinearLayout>
+</LinearLayout>

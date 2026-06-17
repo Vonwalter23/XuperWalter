@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/selector_category_tab" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="36.0px" android:textColor="@color/sel_text_color_white" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/mTextName" android:paddingLeft="60.0px" android:visibility="visible" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="80.0px" android:layout_marginRight="15.0px" android:singleLine="true" />
+    <com.module.view.FixGifImageView android:id="@id/mIvDrawable" android:paddingLeft="60.0px" android:paddingTop="10.0px" android:paddingRight="40.0px" android:paddingBottom="10.0px" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.0px" android:scaleType="fitStart" />
+</com.zhy.autolayout.AutoLinearLayout>

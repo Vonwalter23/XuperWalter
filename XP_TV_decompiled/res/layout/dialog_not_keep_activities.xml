@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_brasiliptv" android:layout_width="980.0px" android:layout_height="580.0px">
+        <TextView android:textSize="40.0px" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/dialog_title_bg" android:layout_width="fill_parent" android:layout_height="100.0px" android:text="@string/exit_tips" />
+        <TextView android:textSize="28.0px" android:textColor="#ffbcc2c4" android:id="@id/mTvContent" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginLeft="80.0px" android:layout_marginTop="40.0px" android:layout_marginRight="80.0px" android:layout_marginBottom="40.0px" android:text="@string/not_keep_activities_title" android:layout_weight="1.0" />
+        <com.zhy.autolayout.AutoLinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0px">
+            <Button android:id="@id/mBtnSet" android:background="@drawable/selector_dialog_btn_account" android:layout_width="350.0px" android:layout_height="58.0px" android:text="@string/not_keep_activities_set" style="@style/btn_exit" />
+            <Button android:id="@id/mBtnLater" android:background="@drawable/selector_dialog_btn_account" android:layout_width="350.0px" android:layout_height="58.0px" android:layout_marginLeft="60.0px" android:text="@string/not_keep_activities_later" style="@style/btn_exit" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

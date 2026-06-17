@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.common.utils.mark.home.KidsRooView android:id="@id/mLayoutPoster" android:paddingLeft="60.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vod.view.PosterView android:id="@id/mPosterView01" android:tag="focus first" android:layout_width="537.0dip" android:layout_height="324.0dip" app:isLeft="true" />
+    <com.vod.view.PosterView android:id="@id/mPosterView02" android:layout_width="253.0dip" android:layout_height="160.0dip" android:layout_marginLeft="541.0dip" />
+    <com.vod.view.PosterView android:id="@id/mPosterView03" android:layout_width="253.0dip" android:layout_height="160.0dip" android:layout_marginLeft="541.0dip" android:layout_marginTop="164.0dip" />
+    <com.vod.view.PosterView android:id="@id/mPosterView04" android:layout_width="267.0dip" android:layout_height="165.0dip" android:layout_marginTop="328.0dip" app:isLeft="true" />
+    <com.vod.view.PosterView android:id="@id/mPosterView05" android:layout_width="266.0dip" android:layout_height="165.0dip" android:layout_marginLeft="271.0dip" android:layout_marginTop="328.0dip" />
+    <com.vod.view.PosterView android:id="@id/mPosterView06" android:layout_width="253.0dip" android:layout_height="165.0dip" android:layout_marginLeft="541.0dip" android:layout_marginTop="328.0dip" />
+    <com.vod.view.PosterView android:id="@id/mPosterView07" android:layout_width="361.0dip" android:layout_height="245.0dip" android:layout_marginLeft="798.0dip" app:isRight="true" />
+    <com.vod.view.PosterView android:id="@id/mPosterView08" android:layout_width="361.0dip" android:layout_height="245.0dip" android:layout_marginLeft="798.0dip" android:layout_marginTop="249.0dip" app:isRight="true" />
+    <com.common.utils.mark.live.FocusBorderView android:id="@id/mFocusBorderView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.common.utils.mark.home.KidsRooView>

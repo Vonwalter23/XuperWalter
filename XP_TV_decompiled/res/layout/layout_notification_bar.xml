@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:orientation="horizontal" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="21.0sp" android:textColor="@color/color_font_height_light" android:gravity="center_vertical" android:id="@id/mTvMembership" android:background="@drawable/selector_home_search_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="true" android:visibility="gone" android:nextFocusRight="@id/mLlSearch" android:layout_width="233.0dip" android:layout_height="45.0dip" android:drawableLeft="@mipmap/icon_home_vip" android:drawablePadding="9.0dip" style="@style/marquee_textview" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/mSearchAndFilter" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/mLlSearch" android:visibility="gone" android:clipChildren="false" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_marginTop="3.0dip">
+            <ImageView android:id="@id/mIvSearch" android:background="@drawable/sel_notify_search" style="@style/notification_icon_style" />
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/mTvSearch" android:visibility="gone" android:layout_width="107.0dip" android:text="@string/search" android:layout_below="@id/mIvPersonal" style="@style/notification_text_style" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/mLlFilter" android:visibility="gone" android:clipChildren="false" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="3.0dip">
+            <ImageView android:id="@id/mIvFilter" android:background="@drawable/sel_notify_fliter" style="@style/notification_icon_style" />
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/mTvFilter" android:visibility="gone" android:layout_width="107.0dip" android:text="@string/filter_vodfilter" android:layout_below="@id/mIvPersonal" style="@style/notification_text_style" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="3.0dip">
+        <ImageView android:id="@id/mImgRecords" android:background="@drawable/sel_notify_records" style="@style/notification_icon_style" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/mTextRecords" android:layout_width="107.0dip" android:text="@string/notification_record" style="@style/notification_text_style" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/mLayoutDownload" android:visibility="gone" android:clipChildren="false" android:layout_width="43.0dip" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="3.0dip">
+        <ImageView android:id="@id/mIvDownload" android:src="@drawable/ic_notify_download" style="@style/notification_icon_style" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/mTvDownload" android:layout_width="107.0dip" android:text="@string/notification_download" android:layout_below="@id/mIvDownload" style="@style/notification_text_style" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/mLayoutPersonal" android:clipChildren="false" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="3.0dip">
+        <ImageView android:id="@id/mIvPersonal" android:background="@drawable/sel_notify_personal" style="@style/notification_icon_style" />
+        <ImageView android:layout_gravity="right" android:id="@id/mIvVipFlag" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="-15.0dip" android:src="@drawable/ic_notify_vip_flag" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/mTvPersonal" android:layout_width="107.0dip" android:text="@string/notification_personal" style="@style/notification_text_style" />
+    </LinearLayout>
+    <FrameLayout android:clipChildren="false" android:layout_width="43.0dip" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="3.0dip">
+        <ImageView android:id="@id/mImgMessage" android:background="@drawable/sel_notify_message" android:nextFocusUp="@id/mImgMessage" style="@style/notification_icon_style" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/mTextMessage" android:layout_width="107.0dip" android:layout_marginTop="43.0dip" android:text="@string/notification_message" style="@style/notification_text_style" />
+        <TextView android:textSize="8.0sp" android:textColor="@color/color_main" android:ellipsize="end" android:gravity="center" android:id="@id/mTextMsgNumber" android:background="@drawable/shape_bg_new_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="13.0dip" android:layout_marginLeft="29.0dip" android:maxWidth="33.0dip" android:minWidth="13.0dip" android:maxLines="1" android:includeFontPadding="false" />
+    </FrameLayout>
+    <View android:id="@id/mDividerLineView" android:background="@color/color_ffffff" android:layout_width="1.0dip" android:layout_height="19.0dip" android:layout_marginTop="13.0dip" android:layout_centerInParent="true" android:layout_marginStart="13.0dip" />
+    <ImageView android:gravity="center" android:id="@id/mImgWifi" android:padding="7.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="13.0dip" />
+    <ImageView android:gravity="center" android:id="@id/mImgEthernet" android:padding="7.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="13.0dip" />
+    <TextView android:textSize="24.0sp" android:textColor="@color/color_font_main" android:gravity="center" android:id="@id/mTextTime" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginTop="8.0dip" android:includeFontPadding="false" />
+</LinearLayout>

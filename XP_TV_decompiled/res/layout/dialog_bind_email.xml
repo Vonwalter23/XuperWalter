@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:id="@id/mLayoutContainer" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/mLayoutBind" android:background="@drawable/bg_dialog_brasiliptv" android:layout_width="980.0px" android:layout_height="676.0px">
+        <TextView android:textSize="40.0px" android:textColor="#ffffffff" android:gravity="center" android:id="@id/mDialogTitle" android:background="@drawable/dialog_title_bg" android:layout_width="fill_parent" android:layout_height="100.0px" android:text="@string/account_bind_email" />
+        <com.zhy.autolayout.AutoLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="40.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0px" android:textColor="@color/color_ffaa00" android:layout_width="820.0px" android:layout_height="wrap_content" android:text="@string/account_input_text_tips" />
+            <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0px">
+                <TextView android:textSize="28.0px" android:textColor="#ffffffff" android:gravity="center" android:id="@id/mTextInitial" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/your_personal_email" />
+                <com.zhy.autolayout.AutoLinearLayout android:layout_width="820.0px" android:layout_height="wrap_content" android:layout_marginTop="5.0px">
+                    <com.module.view.AutoCompleteEditView android:id="@id/mEditEmail" android:hint="@string/input_your_personal_email" style="@style/edit_dialog_style" />
+                </com.zhy.autolayout.AutoLinearLayout>
+                <TextView android:textSize="28.0px" android:textColor="@color/color_ffffff" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0px" android:text="@string/dialog_verification_code" />
+                <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="68.0px" android:layout_marginTop="6.0px">
+                    <EditText android:textSize="24.0px" android:textColor="@color/color_ffffff" android:layout_gravity="center_horizontal" android:id="@id/mEditVerificationCode" android:background="@drawable/bg_dialog_input" android:paddingLeft="10.0px" android:layout_width="280.0px" android:layout_height="68.0px" android:singleLine="true" android:maxLength="6" android:textCursorDrawable="@drawable/shape_edit_cursor" />
+                    <TextView android:textSize="28.0px" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/mTextGetCode" android:background="@drawable/selector_dialog_rectangle" android:focusable="true" android:layout_width="521.0px" android:layout_height="68.0px" android:layout_marginLeft="20.0px" android:text="@string/dialog_get_verification_code" />
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout android:gravity="center|right" android:id="@id/mLayoutPrivacy" android:layout_width="820.0px" android:layout_height="wrap_content" android:layout_marginTop="25.0px">
+                <CheckBox android:gravity="center" android:id="@id/mCheckBox" android:nextFocusDown="@id/mBtnConfirm" android:layout_width="24.0px" android:layout_height="24.0px" android:checked="true" android:button="@drawable/selector_button_checkbox" />
+                <TextView android:textSize="24.0px" android:textColor="@color/color_bbc0c4" android:nextFocusDown="@id/mBtnConfirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:text="@string/personal_read_and_agree" />
+                <TextView android:textSize="24.0px" android:textColor="@color/color_ffaa00" android:id="@id/mTextPolicy" android:background="@drawable/sel_bg_forget_pwd" android:focusable="true" android:nextFocusDown="@id/mBtnConfirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:text="@string/personal_read_and_agree_privacy_policy" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0px">
+                <Button android:id="@id/mBtnConfirm" android:layout_height="70.0px" android:text="@string/dlg_ok" style="@style/button_double_style" />
+                <Button android:id="@id/mBtnCancel" android:layout_marginLeft="60.0px" android:text="@string/dlg_cancel" style="@style/button_double_style" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.module.view.DialogBottomBar android:id="@id/mBottomBar" android:visibility="gone" android:layout_width="980.0px" android:layout_height="wrap_content" android:layout_below="@id/mLayoutBind" />
+    <com.module.view.LoadingView android:id="@id/mLoadingView" android:visibility="gone" android:layout_width="65.0px" android:layout_height="65.0px" android:layout_centerInParent="true" />
+    <com.module.view.AutoEmailCompleteRecyclerView android:scrollbarSize="4.0dip" android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="outsideOverlay" android:id="@id/mRvCompleteList" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:scrollbars="vertical" android:layout_width="820.0px" android:layout_height="300.0px" android:layout_centerHorizontal="true" android:fadeScrollbars="false" android:overScrollMode="always" />
+</com.zhy.autolayout.AutoRelativeLayout>

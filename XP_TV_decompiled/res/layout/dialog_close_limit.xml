@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog_brasiliptv" android:layout_width="980.0px" android:layout_height="580.0px">
+        <TextView android:textSize="40.0px" android:textColor="@color/color_ffffffff" android:gravity="center" android:background="@drawable/dialog_title_bg" android:layout_width="fill_parent" android:layout_height="100.0px" android:text="@string/adult_live_channels" />
+        <TextView android:textSize="28.0px" android:textColor="@color/color_ffffffff" android:gravity="center_vertical" android:id="@id/mTvTips1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="78.0px" android:layout_marginTop="36.0px" android:layout_marginRight="78.0px" android:text="@string/adult_sure_close_tip_1" />
+        <TextView android:textSize="28.0px" android:textColor="@color/color_ffffffff" android:gravity="center_vertical" android:id="@id/mTvTips2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="78.0px" android:layout_marginTop="42.0px" android:layout_marginRight="78.0px" android:text="@string/adult_sure_close_tip_2" />
+        <com.zhy.autolayout.AutoLinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:paddingBottom="60.0px" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:id="@id/mBtnConfirm" android:text="@string/dlg_ok" style="@style/button_double_style" />
+            <Button android:id="@id/mBtnCancel" android:layout_marginLeft="60.0px" android:text="@string/dlg_cancel" style="@style/button_double_style" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.module.view.LoadingView android:id="@id/mLoadingView" android:visibility="gone" android:layout_width="65.0px" android:layout_height="65.0px" android:layout_centerInParent="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.common.utils.mark.home.MatchRooView android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginLeft="67.0dip" android:src="@drawable/live_match_icon" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="127.0dip">
+        <TextView android:textSize="27.0sp" android:textColor="@color/color_font_main" android:gravity="center" android:id="@id/mTvMatchSchedule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/match_schedule" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_b3b6b6" android:gravity="right" android:id="@id/mTvMatchScheduleHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="67.0dip" android:layout_toRightOf="@id/mTvMatchSchedule" android:layout_alignBaseline="@id/mTvMatchSchedule" />
+    </RelativeLayout>
+    <FrameLayout android:clipChildren="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="433.0dip" android:layout_marginTop="49.0dip">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/mRvFutureMatch" android:paddingLeft="263.0dip" android:paddingRight="66.0dip" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/mAllHomeMenu" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginLeft="67.0dip" android:layout_marginTop="49.0dip">
+        <TextView android:textSize="21.0sp" android:textColor="@color/color_font_main" android:gravity="bottom|center" android:id="@id/mIvAllEvent" android:background="@drawable/selector_match_home_all_event" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="160.0dip" android:layout_height="140.0dip" android:text="@string/match_home_all_event" />
+        <TextView android:textSize="21.0sp" android:textColor="@color/color_font_main" android:gravity="bottom|center" android:id="@id/mIvEventSchedule" android:background="@drawable/selector_match_home_event_schedule" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginTop="147.0dip" android:text="@string/match_home_event_schedule" />
+        <TextView android:textSize="21.0sp" android:textColor="@color/color_font_main" android:gravity="bottom|center" android:id="@id/mIvRanking" android:background="@drawable/selector_match_home_ranking" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginTop="293.0dip" android:text="@string/match_home_ranking" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/mIvMatchDown" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="19.0dip" android:layout_marginLeft="133.0dip" android:layout_marginBottom="17.0dip" android:src="@drawable/ic_match_down" />
+    <com.module.view.LoadingView android:layout_gravity="center" android:id="@id/mLoadingView" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/mLlNoSchedule" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="183.0dip" android:src="@drawable/match_no_schedule_icon" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_font_normal" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/match_no_schedule" />
+    </LinearLayout>
+</com.common.utils.mark.home.MatchRooView>

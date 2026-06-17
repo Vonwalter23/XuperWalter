@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vod.view.FocusFirstFrameLayout android:paddingTop="12.0dip" android:clipToPadding="false" android:layout_width="1112.0dip" android:layout_height="311.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.vod.view.PosterView android:id="@id/mRecommend01" android:tag="focus first" android:layout_width="544.0dip" android:layout_height="311.0dip" />
+    <com.vod.view.PosterView android:id="@id/mRecommend02" android:layout_width="280.0dip" android:layout_height="153.0dip" android:layout_marginLeft="548.0dip" />
+    <com.vod.view.PosterView android:id="@id/mRecommend03" android:layout_width="280.0dip" android:layout_height="153.0dip" android:layout_marginLeft="832.0dip" />
+    <com.vod.view.PosterView android:id="@id/mRecommend04" android:layout_width="280.0dip" android:layout_height="153.0dip" android:layout_marginLeft="548.0dip" android:layout_marginTop="157.0dip" />
+    <com.vod.view.PosterView android:id="@id/mRecommend05" android:layout_width="280.0dip" android:layout_height="153.0dip" android:layout_marginLeft="832.0dip" android:layout_marginTop="157.0dip" />
+</com.vod.view.FocusFirstFrameLayout>

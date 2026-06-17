@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog_brasiliptv" android:layout_width="580.0px" android:layout_height="980.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="112.0px" android:layout_height="92.0px" android:layout_marginTop="99.0px" android:src="@mipmap/icon_warn" />
+    <TextView android:textSize="32.0px" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="37.0px" android:layout_marginTop="76.0px" android:layout_marginRight="39.0px" android:text="@string/reverse_virus_present" />
+    <Button android:textSize="32.0px" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/mBtnReverseCancel" android:background="@drawable/selector_dialog_btn_account" android:layout_width="458.0px" android:layout_height="66.0px" android:layout_marginTop="101.0px" android:text="@string/cancel" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+</com.zhy.autolayout.AutoLinearLayout>

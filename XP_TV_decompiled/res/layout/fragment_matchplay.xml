@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/flContainer" android:background="@color/color_000000" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_ffffff" android:id="@id/mTvDataInfo" android:background="#80000000" android:paddingLeft="27.0dip" android:paddingTop="17.0dip" android:paddingRight="13.0dip" android:paddingBottom="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="480.0dip" />
+    <com.live.view.player.LivePlayerController android:id="@id/mPlayerController" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="center" android:id="@id/mLayoutError" android:background="@drawable/bg_dialog" android:visibility="gone" android:layout_width="541.0dip" android:layout_height="208.0dip">
+        <ImageView android:id="@id/mImgWaring" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="27.0dip" android:layout_marginTop="27.0dip" android:src="@mipmap/icon_error" />
+        <TextView android:textSize="21.0sp" android:textColor="@android:color/white" android:gravity="left" android:id="@id/mTextError" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="27.0dip" android:layout_marginRight="40.0dip" android:layout_toRightOf="@id/mImgWaring" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_8c9194" android:id="@id/mTextVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginBottom="13.0dip" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_8c9194" android:id="@id/mTextAccount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="27.0dip" android:layout_marginBottom="13.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

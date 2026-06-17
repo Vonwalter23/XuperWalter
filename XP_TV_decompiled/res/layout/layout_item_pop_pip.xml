@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:gravity="center" android:background="@drawable/selector_category_list" android:focusable="true" android:layout_width="fill_parent" android:layout_height="40.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0px" android:textColor="@color/color_ffffff" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/mTextPipOperate" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0px" android:layout_marginRight="30.0px" android:singleLine="true" />
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center|left" android:layout_gravity="center|left" android:orientation="horizontal" android:id="@id/mLlPipSwitch" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0px">
+        <TextView android:textSize="20.0px" android:textColor="@color/color_ffffff" android:ellipsize="marquee" android:gravity="center|left" android:id="@id/mTextPipOff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/infobar_pip_off" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/mIvPipSwitch" android:layout_width="79.0px" android:layout_height="27.0px" android:layout_marginLeft="6.0px" android:src="@drawable/live_info_pip_on" />
+        <TextView android:textSize="20.0px" android:textColor="@color/color_ffffff" android:ellipsize="marquee" android:id="@id/mTextPipOn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0px" android:text="@string/infobar_pip_on" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoFrameLayout>

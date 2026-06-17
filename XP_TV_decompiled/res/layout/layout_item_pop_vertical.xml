@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:gravity="center" android:id="@id/rootLayout" android:background="@drawable/selector_vod_category_list" android:focusable="true" android:layout_width="fill_parent" android:layout_height="36.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0px" android:textColor="#fffffefe" android:ellipsize="marquee" android:gravity="center" android:id="@id/mSubTitleText" android:paddingLeft="20.0px" android:paddingRight="20.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/mChooseImg" android:visibility="gone" android:layout_width="21.0px" android:layout_height="21.0px" android:layout_marginLeft="10.0px" android:src="@mipmap/vod_icon_pop_item_choose" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

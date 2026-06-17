@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:id="@id/mLayoutProgram" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout android:background="@drawable/sel_poster_nohalo" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="368.0px">
+        <ImageView android:id="@id/mImgPoster" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <TextView android:textSize="24.0px" android:textColor="@color/color_ffffffff" android:gravity="bottom|center|right" android:id="@id/mTextUpdate" android:background="@drawable/shape_bg_series_update" android:paddingRight="5.0px" android:paddingBottom="5.0px" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/marqueeText" />
+        <ImageView android:id="@id/mImgTsTag" android:background="@mipmap/vod_icon_tag_ts" android:visibility="gone" android:layout_width="51.0px" android:layout_height="52.0px" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/mImg4kTag" android:background="@mipmap/vod_icon_tag_4k" android:visibility="gone" android:layout_width="58.0px" android:layout_height="36.0px" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/mImgSubtitleTag" android:background="@mipmap/vod_icon_tag_subtitle" android:visibility="gone" android:layout_width="38.0px" android:layout_height="28.0px" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="24.0px" android:textStyle="bold" android:textColor="@color/color_vod_score" android:gravity="center" android:id="@id/mTextScore" android:background="@mipmap/vod_icon_tag_score_bg" android:visibility="gone" android:layout_width="48.0px" android:layout_height="28.0px" android:includeFontPadding="false" android:layout_alignParentBottom="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <TextView android:textSize="32.0px" android:textColor="@color/color_font_normal" android:layout_gravity="center_horizontal" android:id="@id/mTextName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0px" style="@style/marqueeText" />
+</com.zhy.autolayout.AutoLinearLayout>

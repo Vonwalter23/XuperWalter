@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@mipmap/vod_bg_prompt_bind" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="34.0px" android:textColor="@color/color_font_main" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="111.0px" android:layout_marginTop="145.0px" android:layout_marginRight="111.0px" android:text="@string/bind_account_first" />
+    <TextView android:textSize="30.0px" android:textColor="@color/color_999999" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="111.0px" android:layout_marginTop="44.0px" android:layout_marginRight="111.0px" android:text="@string/bind_go_account_security" />
+    <TextView android:textSize="30.0px" android:textColor="@color/color_font_main" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/mTvConfirm" android:background="@mipmap/vod_bg_bind_confirm" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="380.0px" android:layout_height="68.0px" android:layout_marginTop="105.0px" android:text="@string/dlg_ok" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/epgContent" android:focusable="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="21.0sp" android:textColor="@color/selector_live_epg_title" android:ellipsize="marquee" android:id="@id/tv_content" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="30.0px" android:singleLine="true" android:layout_toLeftOf="@id/iv_status" android:layout_alignParentLeft="true" android:marqueeRepeatLimit="marquee_forever" />
+    <ImageView android:id="@id/iv_status" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="19.0dip" android:layout_alignParentRight="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/selector_live_epg_date" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="7.0dip" android:layout_below="@id/tv_content" />
+</RelativeLayout>

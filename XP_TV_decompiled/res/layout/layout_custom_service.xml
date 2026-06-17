@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:orientation="vertical" android:id="@id/flServer" android:background="@drawable/sel_poster_nohalo" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/mServerList" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.module.view.LoadingView android:layout_gravity="center" android:id="@id/loading" android:layout_width="150.0px" android:layout_height="150.0px" />
+</com.zhy.autolayout.AutoFrameLayout>

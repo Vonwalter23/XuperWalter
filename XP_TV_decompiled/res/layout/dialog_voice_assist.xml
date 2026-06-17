@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/bg_voice_search" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="110.0px">
+            <TextView android:textSize="20.0sp" android:textColor="@color/color_ffffff" android:layout_gravity="center_vertical" android:id="@id/mTvDesc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="90.0px" android:text="Found HD For You" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/color_ffaa00" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/mTvPage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="90.0px" android:text="1/8" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.open.leanback.widget.HorizontalGridView android:id="@id/mRvtResult" android:paddingLeft="90.0px" android:paddingRight="65.0px" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/mIvLoading" android:visibility="gone" android:layout_width="152.0px" android:layout_height="152.0px" android:src="@drawable/ic_voice_search_loading" />
+</com.zhy.autolayout.AutoFrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/poster_focus_nohalo" />
+    <item android:state_focused="true" android:drawable="@drawable/poster_focus_nohalo" />
+    <item android:state_focused="false" android:drawable="@drawable/poster_focus_nohalo" android:state_hovered="true" />
+    <item android:drawable="@color/color_00ffffff" />
+</selector>

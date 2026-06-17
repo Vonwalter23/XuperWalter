@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:id="@id/mLayoutPasswordInput" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoFrameLayout android:background="@color/color_cc000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="80.0px">
+        <TextView android:textSize="28.0px" android:textColor="@color/color_font_main" android:gravity="center" android:id="@id/mToastText" android:paddingLeft="20.0px" android:paddingTop="25.0px" android:paddingRight="20.0px" android:paddingBottom="25.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoFrameLayout>

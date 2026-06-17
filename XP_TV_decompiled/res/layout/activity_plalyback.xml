@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:id="@id/mLiveRoot" android:background="@color/color_000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoFrameLayout android:layout_gravity="center" android:id="@id/mPlayFrameLayout" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="26.0px" android:textColor="@color/color_ffffff" android:id="@id/mTvDataInfo" android:background="#80000000" android:paddingLeft="40.0px" android:paddingTop="25.0px" android:paddingRight="20.0px" android:paddingBottom="20.0px" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="720.0px" />
+    <com.zhy.autolayout.AutoRelativeLayout android:layout_gravity="center" android:id="@id/mLayoutError" android:background="@drawable/bg_dialog" android:visibility="gone" android:layout_width="812.0px" android:layout_height="312.0px">
+        <ImageView android:id="@id/mImgWaring" android:layout_width="68.0px" android:layout_height="68.0px" android:layout_marginLeft="40.0px" android:layout_marginTop="40.0px" android:src="@mipmap/icon_error" />
+        <TextView android:textSize="32.0px" android:textColor="@android:color/white" android:gravity="left" android:id="@id/mTextError" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0px" android:layout_marginTop="40.0px" android:layout_marginRight="60.0px" android:layout_toRightOf="@id/mImgWaring" />
+        <TextView android:textSize="24.0px" android:textColor="@color/color_8c9194" android:id="@id/mTextVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0px" android:layout_marginBottom="20.0px" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="24.0px" android:textColor="@color/color_8c9194" android:id="@id/mTextAccount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0px" android:layout_marginBottom="20.0px" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoFrameLayout>

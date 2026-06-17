@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="28.0px" android:textColor="@color/color_main" android:gravity="center_vertical" android:id="@id/mTvVisitTeamName" android:paddingLeft="40.0px" android:paddingRight="40.0px" android:layout_width="355.0px" android:layout_height="wrap_content" android:text="@string/match_stat_record_lastest" />
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="158.0px" android:layout_height="wrap_content">
+        <ImageView android:id="@id/mIvVisitTeamLogo" android:layout_width="32.0px" android:layout_height="32.0px" android:src="@drawable/ic_team_logo_default" android:scaleType="fitCenter" />
+        <TextView android:textSize="28.0px" android:textColor="@color/color_main" android:id="@id/mTvScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0px" />
+        <ImageView android:id="@id/mIvHomeTeamLogo" android:layout_width="32.0px" android:layout_height="32.0px" android:layout_marginLeft="15.0px" android:src="@drawable/ic_team_logo_default" android:scaleType="fitCenter" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView android:textSize="28.0px" android:textColor="@color/color_main" android:gravity="center|right" android:id="@id/mTvHomeTeamName" android:paddingLeft="40.0px" android:paddingRight="40.0px" android:layout_width="355.0px" android:layout_height="wrap_content" android:text="@string/match_stat_record_lastest" />
+    <TextView android:textSize="28.0px" android:textColor="@color/color_font_normal" android:gravity="center" android:id="@id/mTvDate" android:paddingLeft="114.0px" android:layout_width="302.0px" android:layout_height="wrap_content" android:text="@string/match_stat_record_date" />
+    <TextView android:textSize="28.0px" android:textColor="@color/color_font_normal" android:gravity="center" android:id="@id/mTvChampionship" android:paddingLeft="234.0px" android:paddingRight="40.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/match_stat_record_championship" />
+</com.zhy.autolayout.AutoLinearLayout>

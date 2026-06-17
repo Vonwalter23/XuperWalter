@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/vsImmigrant" android:layout="@layout/layout_personal_immigrant" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/vsLocal" android:layout="@layout/layout_personal_local" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.zhy.autolayout.AutoFrameLayout>

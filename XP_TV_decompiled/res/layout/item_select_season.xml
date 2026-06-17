@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:gravity="center_vertical" android:background="@drawable/selector_item_comm_bg" android:paddingLeft="22.0px" android:paddingTop="17.0px" android:paddingRight="22.0px" android:paddingBottom="17.0px" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="28.0px" android:textColor="@color/text_dropdown_item_color" android:layout_gravity="center|left" android:id="@id/tvSeanson" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/ivSelected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_nation_selected" />
+</com.zhy.autolayout.AutoFrameLayout>

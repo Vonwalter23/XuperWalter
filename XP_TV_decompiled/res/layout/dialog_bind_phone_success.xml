@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout android:gravity="center_horizontal" android:background="@drawable/bg_dialog" android:padding="60.0px" android:layout_width="980.0px" android:layout_height="640.0px">
+        <ImageView android:layout_width="100.0px" android:layout_height="100.0px" android:layout_marginTop="20.0px" android:src="@mipmap/icon_success_smile" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="32.0px" android:textColor="@color/color_bbc0c4" android:id="@id/mTextSuccess" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="150.0px" android:text="@string/phone_binding_success" />
+        <TextView android:textSize="32.0px" android:textColor="@color/color_bbc0c4" android:id="@id/mTextAccount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:text="@string/phone_binding_account" android:layout_below="@id/mTextSuccess" />
+        <TextView android:textSize="32.0px" android:textColor="@color/color_bbc0c4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:text="@string/phone_binding_please_remember" android:layout_below="@id/mTextAccount" />
+        <Button android:id="@id/mBtnClose" android:text="@string/phone_binding_close" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/button_single_style" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

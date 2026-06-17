@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@mipmap/vod_category_left_bg" android:paddingTop="25.0px" android:visibility="visible" android:layout_width="320.0px" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.autolayout.AutoLinearLayout android:id="@id/mLlSearch" android:background="@drawable/selector_category_tab" android:paddingLeft="90.0px" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="80.0px" android:layout_marginTop="30.0px">
+        <ImageView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="30.0px" android:layout_height="30.0px" android:src="@drawable/sel_vod_search" />
+        <TextView android:textSize="36.0px" android:textColor="@color/sel_text_color_white" android:gravity="center_vertical" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0px" android:text="@string/search" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout android:id="@id/mLlFilter" android:background="@drawable/selector_category_tab" android:paddingLeft="90.0px" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="80.0px" android:layout_marginTop="20.0px" android:layout_marginBottom="25.0px">
+        <ImageView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="30.0px" android:layout_height="30.0px" android:src="@drawable/sel_vod_filter" />
+        <TextView android:textSize="36.0px" android:textColor="@color/sel_text_color_white" android:gravity="center_vertical" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0px" android:text="@string/filter_vodfilter" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <View android:background="@mipmap/img_vod_category_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.open.leanback.widget.VerticalGridView android:id="@id/mGridCategory" android:layout_width="300.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0px" android:layout_marginTop="44.0px" android:layout_marginRight="10.0px" android:verticalSpacing="10.0px" app:numberOfColumns="1" />
+</com.zhy.autolayout.AutoLinearLayout>

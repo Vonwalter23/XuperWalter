@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingBottom="37.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="266.0dip" android:layout_height="192.0dip" android:layout_marginRight="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.vod.view.RadiusImageView android:layout_gravity="center" android:id="@id/mHorizonMore" android:background="@drawable/bg_asset_horizon_more" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="266.0dip" android:layout_height="155.0dip" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="67.0dip" android:layout_height="67.0dip" android:src="@drawable/ic_asset_more" />
+        <TextView android:textSize="21.0sp" android:textColor="@color/color_font_normal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/more_info" android:includeFontPadding="false" />
+    </LinearLayout>
+</FrameLayout>

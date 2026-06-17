@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/vod_bg_pop_window" android:clipChildren="false" android:layout_width="180.0px" android:layout_height="168.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.open.leanback.widget.VerticalGridView android:id="@id/mSubtitleRec" android:padding="6.0px" android:scrollbars="none" android:nextFocusRight="@id/searchGridview" android:clipChildren="false" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/color_transparent" app:numberOfColumns="1" app:verticalMargin="4.0px" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <layer-list>
+            <item android:drawable="@mipmap/focus_circle" />
+            <item android:left="2.0dip" android:top="2.0dip" android:right="2.0dip" android:bottom="2.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/color_bg_home_search" />
+                    <corners android:radius="43.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_focused="false" android:state_hovered="true">
+        <layer-list>
+            <item android:drawable="@mipmap/focus_circle" />
+            <item android:left="2.0dip" android:top="2.0dip" android:right="2.0dip" android:bottom="2.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/color_bg_home_search" />
+                    <corners android:radius="43.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:left="2.0dip" android:top="2.0dip" android:right="2.0dip" android:bottom="2.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/color_bg_home_search" />
+                    <corners android:radius="43.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

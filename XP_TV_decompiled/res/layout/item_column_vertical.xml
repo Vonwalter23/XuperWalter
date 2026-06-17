@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mVerticalItem" android:layout_width="172.0dip" android:layout_height="290.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.vod.view.RadiusImageView android:id="@id/mIvPoster" android:layout_width="fill_parent" android:layout_height="253.0dip" android:scaleType="fitXY" />
+    <TextView android:textSize="19.0sp" android:textColor="@color/color_font_main" android:ellipsize="marquee" android:gravity="center" android:id="@id/mTvName" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="37.0dip" android:singleLine="true" android:includeFontPadding="false" android:marqueeRepeatLimit="marquee_forever" />
+</LinearLayout>

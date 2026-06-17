@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.common.utils.mark.home.HomeLiveRootView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|right|top" android:layout_width="17.0dip" android:layout_height="13.0dip" android:layout_marginRight="230.0dip" android:src="@drawable/home_live_channel_up" />
+    <com.widget.custom.MemoryListView android:layout_gravity="right" android:id="@id/mLvChannelList" android:focusable="false" android:scrollbars="none" android:layout_width="259.0dip" android:layout_height="480.0dip" android:layout_marginTop="26.0dip" android:layout_marginRight="27.0dip" android:listSelector="@drawable/selector_home_live_channel" android:divider="@color/transparent" android:dividerHeight="13.0dip" />
+    <ImageView android:layout_gravity="bottom|center|right" android:layout_width="17.0dip" android:layout_height="13.0dip" android:layout_marginRight="230.0dip" android:layout_marginBottom="92.0dip" android:src="@drawable/home_live_channel_down" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/mLlFastBtn" android:layout_width="wrap_content" android:layout_height="53.0dip" android:layout_marginLeft="129.0dip" android:layout_marginBottom="67.0dip">
+        <ImageView android:id="@id/mIvAllColumn" android:background="@drawable/selector_home_live_btn_all_bg" android:padding="10.0dip" android:focusable="true" android:nextFocusDown="@id/mIvAllColumn" android:layout_width="53.0dip" android:layout_height="53.0dip" />
+        <ImageView android:id="@id/mIvFav" android:background="@drawable/selector_home_live_btn_fav_bg" android:padding="10.0dip" android:focusable="true" android:nextFocusLeft="@id/mIvAllColumn" android:nextFocusDown="@id/mIvFav" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginLeft="27.0dip" />
+        <ImageView android:id="@id/mIvSearch" android:background="@drawable/selector_home_live_btn_search_bg" android:padding="10.0dip" android:focusable="true" android:nextFocusLeft="@id/mIvFav" android:nextFocusDown="@id/mIvSearch" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginLeft="27.0dip" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/mFlMainLive" android:focusableInTouchMode="true" android:layout_width="853.0dip" android:layout_height="480.0dip" android:layout_marginLeft="128.0dip" />
+    <RelativeLayout android:id="@id/mLlBottomInfo" android:background="@drawable/shape_home_live_bottom_bg" android:layout_width="853.0dip" android:layout_height="80.0dip" android:layout_marginLeft="128.0dip" android:layout_marginTop="400.0dip">
+        <TextView android:textSize="21.0sp" android:textColor="@color/color_font_second" android:id="@id/mTvChannel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42.0dip" android:layout_marginRight="26.0dip" android:layout_toLeftOf="@id/mIvFullScreen" />
+        <ImageView android:id="@id/mIvFullScreen" android:layout_width="23.0dip" android:layout_height="25.0dip" android:layout_marginTop="44.0dip" android:layout_marginRight="26.0dip" android:src="@mipmap/icon_full_screen" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.common.utils.mark.live.FocusBorderView android:id="@id/mFocusBorderView" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusDown="@id/mIvAllColumn" android:layout_width="880.0dip" android:layout_height="507.0dip" android:layout_marginLeft="115.0dip" android:layout_marginTop="-13.0dip" />
+</com.common.utils.mark.home.HomeLiveRootView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:id="@id/mLayoutPasswordInput" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoFrameLayout android:background="@drawable/bg_dialog_match_reserve" android:layout_width="980.0px" android:layout_height="580.0px">
+        <TextView android:textSize="40.0px" android:textColor="@color/color_ffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0px" android:text="@string/match_notify_will_started" />
+        <com.zhy.autolayout.AutoLinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="107.0px" android:layout_marginTop="208.0px">
+            <TextView android:textSize="32.0px" android:textColor="@color/color_font_main" android:gravity="center|right" android:id="@id/mTvTeam1" android:layout_width="260.0px" android:layout_height="fill_parent" android:layout_marginLeft="15.0px" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/mIvTeam1" android:layout_width="100.0px" android:layout_height="100.0px" android:layout_marginLeft="20.0px" android:scaleType="fitCenter" />
+            <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="72.0px" android:layout_height="64.0px" android:src="@drawable/ic_match_vs" android:scaleType="fitXY" />
+                <TextView android:textSize="40.0px" android:textStyle="bold" android:textColor="@color/color_font_main" android:gravity="center" android:id="@id/mTvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/mIvTeam2" android:layout_width="100.0px" android:layout_height="100.0px" android:layout_marginRight="20.0px" android:scaleType="fitCenter" />
+            <TextView android:textSize="32.0px" android:textColor="@color/color_font_main" android:gravity="center|left" android:id="@id/mTvTeam2" android:layout_width="260.0px" android:layout_height="fill_parent" android:layout_marginRight="15.0px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <Button android:layout_gravity="bottom|center" android:id="@id/mBtnOk" android:layout_width="380.0px" android:layout_height="68.0px" android:layout_marginBottom="60.0px" android:text="@string/match_notify_watch" style="@style/btn_match_watch" />
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

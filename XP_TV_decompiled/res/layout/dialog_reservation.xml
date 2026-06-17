@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_brasiliptv" android:layout_width="760.0px" android:layout_height="460.0px">
+        <com.zhy.autolayout.AutoFrameLayout android:gravity="center" android:paddingLeft="50.0px" android:paddingTop="50.0px" android:paddingRight="50.0px" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+            <com.swlauthnew.view.ScrollTextView android:textSize="27.0px" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/tv_tip_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:lineSpacingExtra="22.5px" />
+        </com.zhy.autolayout.AutoFrameLayout>
+        <com.zhy.autolayout.AutoRelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <View android:id="@id/v_anchor" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerHorizontal="true" />
+            <Button android:textSize="24.0px" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@id/btn_negative" android:background="@drawable/selector_live_reserve_btn_common" android:layout_width="192.0px" android:layout_height="58.0px" android:layout_marginRight="75.0px" android:text="cancel" android:singleLine="true" android:layout_toLeftOf="@id/v_anchor">
+                <requestFocus />
+            </Button>
+            <Button android:textSize="24.0px" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@id/btn_positive" android:background="@drawable/selector_live_reserve_btn_common" android:layout_width="192.0px" android:layout_height="58.0px" android:layout_marginLeft="75.0px" android:text="OK" android:singleLine="true" android:layout_toRightOf="@id/v_anchor" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

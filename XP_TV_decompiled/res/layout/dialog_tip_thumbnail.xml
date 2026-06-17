@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/bg_dialog_guide_down_right" android:layout_width="802.0px" android:layout_height="wrap_content" android:layout_marginLeft="535.0px" android:layout_marginBottom="486.0px">
+        <TextView android:textSize="28.0px" android:textColor="@color/color_1a1a1a" android:id="@id/mIvContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0px" android:text="@string/thumbnail_device_not_support" />
+        <Button android:textSize="28.0px" android:textColor="@color/color_ffffff" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="right" android:id="@id/mBtnClose" android:background="@drawable/shape_btn_thumbnail" android:paddingLeft="10.0px" android:paddingRight="10.0px" android:layout_width="wrap_content" android:layout_height="60.0px" android:layout_marginRight="20.0px" android:layout_marginBottom="20.0px" android:minWidth="320.0px" android:text="@string/thumbnail_do_not_remind" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:textAllCaps="false" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <ImageView android:layout_gravity="bottom" android:layout_width="420.0px" android:layout_height="237.0px" android:layout_marginLeft="486.0px" android:layout_marginBottom="217.0px" android:src="@mipmap/img_thubnail_default" />
+</com.zhy.autolayout.AutoFrameLayout>

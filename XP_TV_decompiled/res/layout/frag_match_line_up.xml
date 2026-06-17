@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:paddingLeft="90.0px" android:paddingRight="90.0px" android:paddingBottom="40.0px" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/match_event_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="100.0px" android:layout_marginLeft="54.0px">
+        <ImageView android:id="@id/mIvVisitTeam" android:layout_width="90.0px" android:layout_height="90.0px" />
+        <TextView android:textSize="32.0px" android:textColor="@color/color_ffffff" android:id="@id/mTvVisitTeam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="100.0px" android:layout_marginRight="60.0px">
+        <TextView android:textSize="32.0px" android:textColor="@color/color_ffffff" android:id="@id/mTvHomeTeam" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/mIvHomeTeam" android:layout_width="90.0px" android:layout_height="90.0px" android:layout_marginLeft="10.0px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="72.0px" android:layout_height="64.0px" android:layout_marginTop="16.0px" android:src="@drawable/ic_match_vs" android:scaleType="fitXY" />
+    <TextView android:textSize="32.0px" android:textColor="@color/color_font_main" android:layout_gravity="center" android:id="@id/mTvHint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/match_hint_info_unavailable" />
+    <com.live.view.LineUpView android:id="@id/mLvLineUp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="60.0px" android:layout_marginTop="100.0px" android:layout_marginRight="60.0px" android:layout_marginBottom="100.0px" />
+    <com.module.view.LoadingView android:id="@id/mLoading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.zhy.autolayout.AutoFrameLayout>

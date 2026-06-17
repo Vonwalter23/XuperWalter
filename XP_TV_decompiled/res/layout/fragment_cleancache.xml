@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="48.0px" android:textStyle="bold" android:textColor="@color/color_font_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80.0px" android:layout_marginTop="96.0px" android:text="@string/personal_clean_cache" />
+    <TextView android:textStyle="bold" android:layout_marginTop="60.0px" android:text="@string/personal_recorde" style="@style/set_clear_left_style" />
+    <Button android:id="@id/mCleanHistoryBtn" android:nextFocusRight="@id/mCleanHistoryBtn" android:nextFocusUp="@id/mCleanHistoryBtn" android:text="@string/clear" style="@style/set_clear_right_style" />
+    <TextView android:textStyle="bold" android:layout_marginTop="58.0px" android:text="@string/image_cache" style="@style/set_clear_left_style" />
+    <Button android:id="@id/mCleanImageBtn" android:nextFocusRight="@id/mCleanImageBtn" android:nextFocusUp="@id/mCleanHistoryBtn" android:text="@string/clear" style="@style/set_clear_right_style" />
+    <TextView android:textStyle="bold" android:layout_marginTop="58.0px" android:text="@string/clear_all" style="@style/set_clear_left_style" />
+    <Button android:gravity="center" android:id="@id/mCleanAllBtn" android:nextFocusRight="@id/mCleanAllBtn" android:nextFocusUp="@id/mCleanImageBtn" android:nextFocusDown="@id/mCleanAllBtn" android:text="@string/clear" style="@style/set_clear_right_style" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:focusable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="32.0px" android:textColor="@color/color_858d94" android:gravity="center" android:id="@id/mTvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vod_menu_player" android:includeFontPadding="false" />
+        <TextView android:textSize="32.0px" android:textColor="@color/color_c4c4c4" android:gravity="center" android:id="@id/mTvSubTitle" android:paddingBottom="6.0px" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:maxWidth="1100.0px" android:text="@string/vod_menu_player_subtitle" android:maxLines="2" android:singleLine="false" android:includeFontPadding="false" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.open.leanback.widget.HorizontalGridView android:id="@id/mGridView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.zhy.autolayout.AutoLinearLayout>

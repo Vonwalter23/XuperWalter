@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/bg_match_card" android:paddingBottom="30.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="40.0px" android:textStyle="bold" android:textColor="@color/color_font_main" android:gravity="center_vertical" android:paddingLeft="40.0px" android:layout_width="fill_parent" android:layout_height="98.0px" android:text="@string/match_confrontation_records" />
+    <View android:background="@color/color_1affffff" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="90.0px" android:layout_marginTop="20.0px">
+        <TextView android:textSize="28.0px" android:textStyle="bold" android:textColor="@color/color_font_main" android:paddingLeft="40.0px" android:layout_width="355.0px" android:layout_height="wrap_content" android:text="@string/match_stat_record_lastest" />
+        <View android:layout_width="513.0px" android:layout_height="wrap_content" />
+        <TextView android:textSize="28.0px" android:textStyle="bold" android:textColor="@color/color_font_main" android:gravity="center" android:paddingLeft="114.0px" android:layout_width="302.0px" android:layout_height="wrap_content" android:text="@string/match_stat_record_date" />
+        <TextView android:textSize="28.0px" android:textStyle="bold" android:textColor="@color/color_font_main" android:gravity="center" android:paddingLeft="234.0px" android:paddingRight="40.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/match_stat_record_championship" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <ViewStub android:id="@id/mFirstRecord" android:layout="@layout/layout_confrontation_record" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0px" />
+    <ViewStub android:id="@id/mSecondRecord" android:layout="@layout/layout_confrontation_record" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px" />
+    <ViewStub android:id="@id/mThirdRecord" android:layout="@layout/layout_confrontation_record" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px" />
+    <ViewStub android:id="@id/mFourthRecord" android:layout="@layout/layout_confrontation_record" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px" />
+    <ViewStub android:id="@id/mFifthRecord" android:layout="@layout/layout_confrontation_record" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px" />
+</com.zhy.autolayout.AutoLinearLayout>

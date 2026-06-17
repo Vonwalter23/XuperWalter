@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:id="@id/mRootView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/color_6608101d" android:layout_width="446.0px" android:layout_height="fill_parent" android:layout_marginLeft="90.0px" android:layout_marginTop="80.0px" android:layout_marginBottom="60.0px">
+        <com.zhy.autolayout.AutoFrameLayout android:layout_width="360.0px" android:layout_height="360.0px" android:layout_marginTop="150.0px">
+            <ImageView android:id="@id/mImgQrCode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textSize="28.0px" android:textColor="@color/color_ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/mTvError" android:visibility="gone" android:layout_width="420.0px" android:layout_height="wrap_content" android:text="@string/network_timed_out" android:layout_centerInParent="true" />
+            <com.module.view.LoadingView android:layout_gravity="center" android:id="@id/mLoadingView" android:visibility="gone" android:layout_width="120.0px" android:layout_height="120.0px" />
+        </com.zhy.autolayout.AutoFrameLayout>
+        <TextView android:textSize="32.0px" android:textColor="@color/color_ffffffff" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="27.0px" android:layout_marginTop="53.0px" android:layout_marginRight="27.0px" android:text="@string/personal_scan_tip" />
+        <View android:layout_width="1.0px" android:layout_height="0.0px" android:layout_weight="1.0" />
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:background="@drawable/vod_shape_disp_qr_bg" android:layout_width="fill_parent" android:layout_height="80.0px" android:layout_marginLeft="23.0px" android:layout_marginRight="23.0px" android:layout_marginBottom="20.0px">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="47.0px" android:layout_height="55.0px" android:layout_marginLeft="14.0px" android:src="@mipmap/vod_icon_android" />
+            <TextView android:textSize="24.0px" android:textColor="@color/color_ffffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0px" android:layout_marginRight="60.0px" android:text="@string/available_only_for_android" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoRelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="40.0px" android:textColor="@color/color_ffffffff" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0px" android:layout_marginTop="108.0px" android:text="@string/warm_tip" />
+        <TextView android:textSize="32.0px" android:textColor="@color/color_ffffffff" android:id="@id/tvDes1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0px" android:layout_marginTop="29.0px" android:text="1." android:layout_below="@id/tvTitle" />
+        <TextView android:textSize="32.0px" android:textColor="@color/color_ffffffff" android:id="@id/tvDesOne" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="99.0px" android:layout_toRightOf="@id/tvDes1" android:layout_alignTop="@id/tvDes1" />
+        <ImageView android:id="@id/ivQrDesOne" android:layout_width="470.0px" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:src="@mipmap/vod_icon_qr_code_one" android:adjustViewBounds="true" android:layout_below="@id/tvDesOne" android:layout_alignLeft="@id/tvDesOne" />
+        <TextView android:textSize="32.0px" android:textColor="@color/color_ffffffff" android:id="@id/tvDes2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0px" android:text="2." android:layout_below="@id/ivQrDesOne" android:layout_alignLeft="@id/tvDes1" />
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0px" android:layout_toRightOf="@id/tvDes2" android:layout_below="@id/ivQrDesOne">
+            <TextView android:textSize="32.0px" android:textColor="@color/color_ffffffff" android:id="@id/tvDesTwo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="99.0px" />
+            <ImageView android:layout_width="1100.0px" android:layout_height="wrap_content" android:src="@mipmap/vod_icon_qr_code_two" android:adjustViewBounds="true" android:layout_below="@id/tvDesTwo" android:layout_alignLeft="@id/tvDesTwo" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

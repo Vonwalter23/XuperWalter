@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="58.0px" android:textStyle="bold" android:textColor="@color/color_font_main" android:id="@id/mTvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="165.0px" />
+    <com.zhy.autolayout.AutoLinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px">
+        <com.module.childlock.view.MarqueTextView android:textSize="28.0px" android:textStyle="bold" android:textColor="@color/color_font_normal" android:layout_gravity="center_vertical" android:id="@id/mTextTimeType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0px" android:maxWidth="1200.0px" android:singleLine="false" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/mIvSupportSubtitle" android:visibility="gone" android:layout_width="39.0px" android:layout_height="28.0px" android:layout_marginLeft="10.0px" android:src="@mipmap/icon_support_subtitles" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/mIvSupportAudio" android:visibility="gone" android:layout_width="39.0px" android:layout_height="28.0px" android:layout_marginLeft="10.0px" android:src="@mipmap/icon_support_audio" />
+        <TextView android:textSize="32.0px" android:textStyle="bold" android:textColor="@color/color_font_height_light" android:layout_gravity="center_vertical" android:id="@id/mTextScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0px">
+        <TextView android:textSize="28.0px" android:textStyle="bold" android:textColor="@color/color_detail_font_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="660.0px" android:text="@string/detail_director" android:singleLine="true" />
+        <com.module.childlock.view.MarqueTextView android:textSize="28.0px" android:textColor="@color/color_font_normal" android:id="@id/mTextDirector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="1325.0px" android:singleLine="false" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0px">
+        <TextView android:textSize="28.0px" android:textStyle="bold" android:textColor="@color/color_detail_font_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="660.0px" android:text="@string/detail_actor" android:singleLine="false" />
+        <TextView android:textSize="28.0px" android:textColor="@color/color_font_normal" android:id="@id/mTextActor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="1325.0px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <ScrollView android:id="@id/mScrollView" android:layout_width="1400.0px" android:layout_height="460.0px" android:layout_marginTop="50.0px">
+        <com.zhy.autolayout.AutoFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="28.0px" android:textColor="@color/color_detail_font_des" android:id="@id/mTextContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="10.0px" />
+            <TextView android:textSize="28.0px" android:textStyle="bold" android:textColor="@color/color_detail_font_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="660.0px" android:text="@string/detail_introduction" android:singleLine="true" />
+        </com.zhy.autolayout.AutoFrameLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

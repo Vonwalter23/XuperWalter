@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:id="@id/rlContent" android:focusable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="380.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivTopicVideoPoster" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <TextView android:textSize="32.0px" android:textColor="@color/color_ffffffff" android:gravity="center" android:id="@id/tvTopicVideoName" android:background="@color/color_cc0b131b" android:paddingLeft="8.0px" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="80.0px" android:layout_below="@id/mImgLayout" android:layout_alignParentBottom="true" style="@style/marqueeText" />
+</com.zhy.autolayout.AutoRelativeLayout>

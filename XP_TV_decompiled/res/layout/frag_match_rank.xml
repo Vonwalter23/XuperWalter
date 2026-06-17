@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.autolayout.AutoFrameLayout android:id="@id/mAflContent" android:background="@drawable/bg_match_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="920.0px" android:layout_marginLeft="90.0px" android:layout_marginRight="90.0px">
+        <include android:id="@id/mMatchDesc" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/item_match_rank_desc_large" />
+    </com.zhy.autolayout.AutoFrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="0.0dip" android:scrollbarThumbVertical="@drawable/scrollbar_thumb_match_rank_vertical" android:scrollbarTrackVertical="@drawable/scrollbar_track_vertical" android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="outsideOverlay" android:id="@id/mRvRank" android:paddingLeft="54.0px" android:paddingRight="54.0px" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="780.0px" android:layout_marginLeft="36.0px" android:layout_marginTop="140.0px" android:layout_marginRight="36.0px" android:fadeScrollbars="false" android:overScrollMode="always" />
+    <com.module.view.LoadingView android:id="@id/mLoading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mAllNoData" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="113.0px" android:layout_height="wrap_content" android:src="@drawable/match_no_schedule_icon" android:scaleType="fitCenter" />
+        <TextView android:textSize="24.0px" android:textColor="@color/color_font_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0px" android:text="@string/no_data" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoFrameLayout>

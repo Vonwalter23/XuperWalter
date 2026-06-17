@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:id="@id/mLayoutBottomBar" android:background="@drawable/bg_notify_error" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mImageNotify" android:layout_width="33.0px" android:layout_height="33.0px" android:layout_marginLeft="10.0px" android:src="@mipmap/icon_notify_error" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+    <com.module.childlock.view.MarqueTextView android:textSize="28.0px" android:textColor="@color/color_333333" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/mTextNotify" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px" android:text="@string/personal_email_not_exits" android:singleLine="true" android:layout_toRightOf="@id/mImageNotify" android:layout_centerVertical="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

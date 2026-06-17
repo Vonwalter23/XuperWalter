@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mIvAd" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <com.module.view.LoadingView android:layout_gravity="center" android:id="@id/mLoadingView" android:visibility="gone" android:layout_width="100.0px" android:layout_height="100.0px" />
+    <Button android:layout_gravity="bottom|center" android:id="@id/mBtnGo" android:background="@drawable/selector_dialog_btn_exit" android:visibility="gone" android:layout_width="250.0px" android:layout_height="50.0px" android:layout_marginBottom="40.0px" android:text="@string/ad_screen_go" style="@style/btn_pwd" />
+</com.zhy.autolayout.AutoFrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_match_category_bg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mIvMatchLogo" android:layout_width="54.0px" android:layout_height="54.0px" android:layout_marginLeft="39.0px" android:layout_marginTop="26.0px" android:layout_marginBottom="26.0px" />
+    <TextView android:textSize="32.0px" android:textColor="@color/selector_match_category_text_color" android:ellipsize="marquee" android:id="@id/tvName" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0px" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+</com.zhy.autolayout.AutoLinearLayout>

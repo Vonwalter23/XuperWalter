@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.autolayout.AutoRelativeLayout android:layout_width="980.0px" android:layout_height="720.0px">
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_brasiliptv" android:layout_width="980.0px" android:layout_height="660.0px">
+            <TextView android:textSize="40.0px" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/mDialogTitle" android:background="@drawable/dialog_title_bg" android:layout_width="fill_parent" android:layout_height="100.0px" android:text="@string/personal_retrieve_through_phone" />
+            <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:id="@id/mLayoutInputPhone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="28.0px" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="82.0px" android:layout_marginTop="40.0px" android:text="@string/personal_mobile_account" />
+                <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="68.0px" android:layout_marginTop="6.0px">
+                    <com.module.view.NationSelectView android:gravity="center_vertical" android:id="@id/mNationSelectView" android:nextFocusRight="@id/mEditPhoneNum" android:layout_width="401.0px" android:layout_height="68.0px" android:layout_marginLeft="79.0px" app:popHeight="400" app:popWidth="401" />
+                    <com.module.view.CustomImageTextView android:id="@id/mTextNationCode" android:layout_width="401.0px" android:layout_height="68.0px" android:layout_marginLeft="20.0px" app:src="@drawable/icon_nation_add" />
+                </com.zhy.autolayout.AutoLinearLayout>
+                <EditText android:textSize="24.0px" android:textColor="@color/color_ffffff" android:textColorHint="@color/color_8c9194" android:gravity="center_vertical" android:id="@id/mEditPhoneNum" android:background="@mipmap/bg_dialog_edit" android:paddingLeft="20.0px" android:nextFocusDown="@id/mTextGetCode" android:layout_width="821.0px" android:layout_height="68.0px" android:layout_marginLeft="79.0px" android:layout_marginTop="20.0px" android:hint="@string/dialog_phone_hint" android:singleLine="true" android:maxLength="19" android:textCursorDrawable="@drawable/shape_edit_cursor" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:id="@id/mLayoutVerifyPhone" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0px" android:layout_marginBottom="40.0px">
+                <TextView android:textSize="32.0px" android:textColor="@color/color_bbc0c4" android:id="@id/mTextPhoneVerify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="75.0px" android:layout_marginRight="75.0px" android:text="@string/phone_retrieve_tip" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <TextView android:textSize="28.0px" android:textColor="@color/color_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="78.0px" android:layout_marginTop="28.0px" android:text="@string/dialog_verification_code" />
+            <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="68.0px" android:layout_marginTop="6.0px">
+                <EditText android:textSize="24.0px" android:textColor="@color/color_ffffff" android:layout_gravity="center_horizontal" android:id="@id/mEditVerificationCode" android:background="@mipmap/bg_dialog_edit" android:paddingLeft="10.0px" android:layout_width="280.0px" android:layout_height="68.0px" android:layout_marginLeft="80.0px" android:singleLine="true" android:maxLength="6" android:textCursorDrawable="@drawable/shape_edit_cursor" />
+                <TextView android:textSize="28.0px" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/mTextGetCode" android:background="@drawable/selector_dialog_rectangle" android:focusable="true" android:layout_width="521.0px" android:layout_height="66.0px" android:layout_marginLeft="20.0px" android:text="@string/dialog_get_verification_code" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/mTextNextStep" android:focusable="true" android:visibility="visible" android:layout_width="438.0px" android:layout_height="68.0px" android:layout_marginTop="65.0px" android:text="@string/dialog_guide_next" style="@style/button_single_style" />
+            <com.zhy.autolayout.AutoLinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/mLlTwoBtn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="75.0px">
+                <Button android:id="@id/mBtnNextStep" android:text="@string/dialog_guide_next" style="@style/button_double_style" />
+                <Button android:id="@id/mBtnBindEmail" android:layout_marginLeft="58.0px" android:text="@string/account_bind_email" style="@style/button_double_style" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.module.view.DialogBottomBar android:id="@id/mBottomBar" android:visibility="gone" android:layout_width="980.0px" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <com.module.view.LoadingView android:id="@id/mLoadingView" android:visibility="gone" android:layout_width="65.0px" android:layout_height="65.0px" android:layout_centerInParent="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

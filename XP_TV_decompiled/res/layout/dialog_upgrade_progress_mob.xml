@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="410.0px">
+        <TextView android:textSize="36.0px" android:textColor="#ffffffff" android:id="@id/mTvUpdating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upgrade_progress_updating" />
+        <TextView android:textSize="28.0px" android:textColor="#fff7bd46" android:id="@id/mTvDontCloseApp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upgrade_progress_dont_close_app" />
+        <TextView android:textSize="28.0px" android:textColor="#ffe22a21" android:id="@id/mTvDownloadFail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upgrade_progress_download_fail" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.mobile.view.UpgradeProgressView android:id="@id/mUpvProgress" android:layout_width="fill_parent" android:layout_height="28.0px" android:layout_marginLeft="55.0px" android:layout_marginRight="55.0px" />
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0px" android:layout_marginTop="70.0px">
+        <TextView android:textSize="36.0px" android:textStyle="bold" android:id="@id/mTvNewFunc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upgrade_progress_new_function" />
+        <TextView android:textSize="26.0px" android:textColor="#ffb3b3b3" android:id="@id/mTvVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView android:textSize="26.0px" android:textColor="#ffc4c4c4" android:id="@id/mTvReleaseNote" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="55.0px" android:layout_marginTop="20.0px" android:layout_marginRight="55.0px" android:maxHeight="200.0px" />
+    <TextView android:textSize="24.0px" android:textColor="@android:color/white" android:id="@id/mTvDownloadLinkDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0px" android:layout_marginTop="50.0px" android:layout_marginRight="55.0px" />
+    <TextView android:textSize="24.0px" android:textColor="@android:color/white" android:id="@id/mTvDownloadHint" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="55.0px" android:layout_marginRight="55.0px" android:text="@string/upgrade_progress_cant_download" />
+    <TextView android:textSize="24.0px" android:textColor="@android:color/white" android:id="@id/mTvContract" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="55.0px" android:layout_marginRight="55.0px" />
+    <com.zhy.autolayout.AutoFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="32.0px" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/mBtnClose" android:background="@drawable/shape_btn_update" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0px" android:layout_marginLeft="55.0px" android:layout_marginTop="80.0px" android:layout_marginRight="55.0px" android:textAllCaps="false" />
+        <TextView android:textSize="26.0px" android:textColor="#ffb3b3b3" android:layout_gravity="bottom|center" android:id="@id/mTvCurrentVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0px" />
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" android:layout_width="167.0dip" android:layout_height="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/mPosterLayout" android:background="@drawable/sel_poster_nohalo" android:duplicateParentState="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/mPosterImg" android:layout_width="fill_parent" android:layout_height="245.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="bottom|center" android:id="@id/mVideoStateText" android:background="@drawable/shape_bg_poster_title" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="167.0dip" android:layout_height="53.0dip" android:layout_alignBottom="@id/mPosterImg" style="@style/marqueeText" />
+        <RelativeLayout android:id="@id/mLayoutMore" android:background="@mipmap/bg_vod_more" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="245.0dip" android:layout_centerInParent="true">
+            <View android:background="@mipmap/icon_free_more" android:layout_width="65.0dip" android:layout_height="67.0dip" android:layout_marginTop="89.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="27.0dip" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="27.0dip" android:text="@string/more_info" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="21.0sp" android:textColor="@color/sel_text_color_white" android:gravity="center" android:id="@id/mVideoNameText" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="3.0dip" android:layout_below="@id/mPosterLayout" android:layout_centerHorizontal="true" style="@style/marqueeText" />
+</RelativeLayout>

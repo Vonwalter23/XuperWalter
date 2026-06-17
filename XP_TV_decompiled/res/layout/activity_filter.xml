@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mRootView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/mVsFilterPanel" android:layout="@layout/layout_filter" android:layout_width="fill_parent" android:layout_height="281.0dip" />
+    <TextView android:textSize="24.0sp" android:textColor="@color/color_font_main" android:gravity="center" android:id="@id/mTvNoResult" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/vod_search_no_result" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.open.leanback.widget.VerticalGridView android:id="@id/mVgvFilterResult" android:padding="40.0dip" android:focusable="false" android:scrollbars="none" android:nextFocusRight="@id/mVgvShowResult" android:clipToPadding="false" android:layoutAnimation="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/color_transparent" android:overScrollMode="never" app:focusOutFront="true" app:horizontalMargin="24.0dip" app:numberOfColumns="6" app:verticalMargin="13.0dip" />
+        <com.module.view.LoadingView android:layout_gravity="center" android:id="@id/mLvLoading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

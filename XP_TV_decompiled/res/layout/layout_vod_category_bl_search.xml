@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@mipmap/vod_category_left_bg" android:visibility="visible" android:layout_width="320.0px" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mLlSearch" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="270.0px">
+        <ImageView android:background="@drawable/selector_notification" android:duplicateParentState="true" android:layout_width="100.0px" android:layout_height="100.0px" android:src="@drawable/bg_bl_search" />
+        <TextView android:textSize="24.0px" android:textColor="@color/color_b3b3b3" android:gravity="center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:text="@string/bl_search_input_hint" android:includeFontPadding="false" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <View android:background="@mipmap/img_vod_category_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.open.leanback.widget.VerticalGridView android:id="@id/mGridCategory" android:layout_width="320.0px" android:layout_height="fill_parent" android:layout_marginTop="44.0px" android:verticalSpacing="10.0px" app:numberOfColumns="1" />
+</com.zhy.autolayout.AutoLinearLayout>

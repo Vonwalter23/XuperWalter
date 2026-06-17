@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="40.0px" android:textStyle="bold" android:textColor="@color/color_font_main" android:layout_gravity="center_horizontal" android:id="@id/mTvDetailType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0px" />
+    <ScrollView android:scrollbarSize="10.0px" android:scrollbarThumbVertical="@drawable/shape_scrollbar_gray_thumb" android:scrollbarTrackVertical="@drawable/shape_scrollbar_gray_track" android:scrollbarStyle="outsideInset" android:id="@id/mScrollView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="88.0px" android:layout_marginTop="40.0px" android:layout_marginRight="53.0px" android:layout_marginBottom="60.0px" android:layout_weight="1.0" android:scrollbarFadeDuration="0" android:fadeScrollbars="false">
+        <TextView android:textSize="28.0px" android:textColor="@color/color_font_normal" android:id="@id/mTextContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="12.0px" />
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.module.view.AdvertiseLayout android:id="@id/adLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:ad_type="apk_home_page" app:defaultBgId="@color/color_0b0b0b"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.module.view.notice.NoticeTextView android:textSize="23.0sp" android:textColor="@color/color_font_normal" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/mTextNotice" android:background="@color/color_33000000" android:paddingLeft="7.0dip" android:visibility="gone" android:layout_width="566.0dip" android:layout_height="32.0dip" android:layout_marginLeft="157.0dip" android:layout_marginTop="32.0dip" android:singleLine="true" android:includeFontPadding="false" android:drawableLeft="@mipmap/icon_home_announcement" android:drawablePadding="7.0dip" android:marqueeRepeatLimit="marquee_forever" app:noticeType="home" app:parentDuplicateVisibility="false" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/mViewPager" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="93.0dip" />
+    <View android:id="@id/mGridTabBg" android:background="@drawable/shape_home_tab_bg" android:layout_width="420.0dip" android:layout_height="fill_parent" />
+    <com.open.leanback.widget.VerticalGridView android:id="@id/mGridTab" android:paddingTop="159.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="236.0dip" android:layout_height="600.0dip" app:focusOutEnd="true" />
+    <com.common.utils.mark.live.NotificationBarRootView android:orientation="horizontal" android:id="@id/mViewLogo" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginStart="26.0dip">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="13.0dip">
+            <ImageView android:id="@id/mImgLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_home_app" />
+            <ImageView android:id="@id/mIvLogoCover" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="19.0sp" android:textColor="@color/color_font_main" android:id="@id/mTextAppName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="25.0dip" android:text="@string/app_name" android:alpha="0.7" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_b3b3b3" android:layout_gravity="center_vertical" android:id="@id/mTextAreaFlag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+        </LinearLayout>
+    </com.common.utils.mark.live.NotificationBarRootView>
+    <com.vod.view.NotificationBar android:gravity="right" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/mNotificationBar" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-40.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="39.0dip" />
+</com.module.view.AdvertiseLayout>

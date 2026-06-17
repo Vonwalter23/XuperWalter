@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:background="@color/color_33777980" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="28.0px" android:textColor="@color/color_c4c4c4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110.0px" android:text="@string/customer_service" />
+    <TextView android:textSize="28.0px" android:textColor="@color/color_ffffff" android:id="@id/tvContact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="21 96844-6401" />
+</com.zhy.autolayout.AutoLinearLayout>

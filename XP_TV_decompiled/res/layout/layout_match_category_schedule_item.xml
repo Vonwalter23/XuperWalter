@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:id="@id/mLayoutMatchHome" android:background="@drawable/selector_match_item_grey" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="blocksDescendants" android:layout_width="1420.0px" android:layout_height="150.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.autolayout.AutoFrameLayout android:orientation="vertical" android:background="@drawable/match_schedule_bg_normal" android:layout_width="260.0px" android:layout_height="160.0px">
+        <TextView android:textSize="32.0px" android:textColor="@color/color_font_main" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/mTvMatchTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    </com.zhy.autolayout.AutoFrameLayout>
+    <TextView android:textSize="32.0px" android:textColor="@color/color_font_main" android:gravity="center|right" android:id="@id/mTvTeam1" android:layout_width="340.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0px" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/mIvTeam1" android:layout_width="100.0px" android:layout_height="100.0px" android:layout_marginLeft="20.0px" android:scaleType="fitCenter" />
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="220.0px" android:layout_height="fill_parent">
+        <TextView android:textSize="46.0px" android:textStyle="bold" android:textColor="@color/color_font_main" android:gravity="center" android:id="@id/mTvTimeOrScore" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/ivVs" android:visibility="visible" android:layout_width="52.0px" android:layout_height="36.0px" android:layout_marginBottom="10.0px" android:src="@drawable/icon_white_vs" />
+        <TextView android:textSize="24.0px" android:textColor="@color/color_font_normal" android:id="@id/mTvFinished" android:background="@drawable/bg_match_finished" android:paddingLeft="24.0px" android:paddingTop="5.0px" android:paddingRight="24.0px" android:paddingBottom="5.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/match_finished" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/mIvTeam2" android:layout_width="100.0px" android:layout_height="100.0px" android:layout_marginRight="20.0px" android:scaleType="fitCenter" />
+    <com.zhy.autolayout.AutoFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="32.0px" android:textColor="@color/color_font_main" android:gravity="center|left" android:id="@id/mTvTeam2" android:layout_width="340.0px" android:layout_height="fill_parent" android:layout_marginRight="10.0px" />
+        <ImageView android:layout_gravity="right" android:id="@id/mIvSubscribe" android:background="@color/color_4d5c5f66" android:padding="6.0px" android:layout_width="58.0px" android:layout_height="58.0px" android:layout_marginTop="4.0px" android:layout_marginRight="40.0px" android:src="@drawable/ic_detail_subscribe" />
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

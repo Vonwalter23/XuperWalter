@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoFrameLayout android:background="@drawable/bg_dialog" android:layout_width="812.0px" android:layout_height="312.0px">
+        <com.zhy.autolayout.AutoRelativeLayout android:id="@id/mLayoutFeedback" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/mIvWaring" android:layout_width="68.0px" android:layout_height="68.0px" android:layout_marginLeft="40.0px" android:layout_marginTop="40.0px" android:src="@mipmap/icon_error" />
+            <TextView android:textSize="32.0px" android:textColor="@android:color/white" android:gravity="left" android:id="@id/mTvError" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0px" android:layout_marginTop="40.0px" android:layout_marginRight="40.0px" android:layout_toRightOf="@id/mIvWaring" />
+            <Button android:id="@id/mBtnFeedback" android:background="@drawable/shape_btn_focus" android:paddingLeft="20.0px" android:paddingRight="20.0px" android:layout_width="wrap_content" android:layout_height="58.0px" android:layout_marginBottom="66.0px" android:text="@string/nd_click_fb" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/button_single_style" />
+            <TextView android:textSize="24.0px" android:textColor="@color/color_8c9194" android:id="@id/mTvVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0px" android:layout_marginBottom="20.0px" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="24.0px" android:textColor="@color/color_8c9194" android:id="@id/mTvPlayer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:layout_marginBottom="20.0px" android:layout_toRightOf="@id/mTvVersion" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="24.0px" android:textColor="@color/color_8c9194" android:id="@id/mTvAccount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0px" android:layout_marginBottom="20.0px" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <TextView android:textSize="32.0px" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mTvFbSuccess" android:padding="50.0px" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/nd_fb_suc" />
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="28.0px" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_upgrade_toast" android:background="#f50a0a0a" android:padding="46.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="100.0px" />
+</com.zhy.autolayout.AutoFrameLayout>

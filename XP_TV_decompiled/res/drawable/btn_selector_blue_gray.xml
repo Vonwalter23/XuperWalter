@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@color/color_main" />
+    <item android:state_focused="false" android:drawable="@color/color_main" android:state_hovered="true" />
+    <item android:drawable="@color/color_80777980" />
+</selector>

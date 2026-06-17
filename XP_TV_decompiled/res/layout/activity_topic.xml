@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:id="@id/mRootView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivTopicBg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <View android:background="@mipmap/bg_special_detail" android:layout_width="930.0px" android:layout_height="fill_parent" />
+    <TextView android:textSize="48.0px" android:textColor="@color/color_f5f5f5" android:id="@id/tvTopicName" android:layout_width="720.0px" android:layout_height="wrap_content" android:layout_marginLeft="100.0px" android:layout_marginTop="122.0px" />
+    <com.swlauthnew.view.ScrollTextView android:textSize="24.0px" android:textColor="@color/color_f5f5f5" android:id="@id/tvTopicDes" android:layout_width="520.0px" android:layout_height="255.0px" android:layout_marginLeft="100.0px" android:layout_marginTop="21.0px" android:layout_below="@id/tvTopicName" />
+    <Gallery android:gravity="bottom|center" android:id="@id/glTopicDetail" android:background="@null" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="55.0px" android:spacing="25.0px" android:layout_alignParentBottom="true" android:unselectedAlpha="1.0" />
+    <TextView android:textSize="32.0px" android:textColor="@color/text_color" android:id="@id/mCollectText" android:background="@drawable/selector_dialog_btn_account" android:layout_width="240.0px" android:layout_height="68.0px" android:layout_marginTop="61.0px" android:layout_marginRight="100.0px" android:layout_alignParentRight="true" style="@style/marqueeText" />
+    <com.module.view.LoadingView android:id="@id/loadingView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:id="@id/mRootView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/mRadioGroup" android:layout_width="360.0px" android:layout_height="fill_parent" android:layout_marginTop="200.0px">
+        <RadioButton android:id="@id/mRbHistory" android:nextFocusUp="@id/mRbHistory" android:text="@string/personal_recorde" style="@style/personal_radiobutton" />
+        <RadioButton android:id="@id/mRbFavorite" android:text="@string/personal_my_collection" style="@style/personal_radiobutton" />
+        <RadioButton android:id="@id/mRbSubscribe" android:nextFocusDown="@id/mRbAdult" android:text="@string/personal_my_subscribe" style="@style/personal_radiobutton" />
+        <RadioButton android:id="@id/mRbAdult" android:visibility="gone" android:text="@string/personal_my_favorite_adult" style="@style/personal_radiobutton" />
+    </RadioGroup>
+    <View android:id="@id/mDivider" android:background="@mipmap/divider_vertical" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_toRightOf="@id/mRadioGroup" />
+    <com.zhy.autolayout.AutoFrameLayout android:id="@id/mRightContainerLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/mDivider" />
+</com.zhy.autolayout.AutoRelativeLayout>

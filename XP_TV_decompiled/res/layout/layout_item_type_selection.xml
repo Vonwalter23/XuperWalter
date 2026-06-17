@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:focusable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="32.0px" android:textColor="@color/color_858d94" android:gravity="center" android:id="@id/mTvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vod_menu_selection" android:includeFontPadding="false" />
+    <com.module.view.SelectionView android:id="@id/mSelectionView" android:layout_width="fill_parent" android:layout_height="140.0px" android:layout_marginTop="20.0px" />
+</com.zhy.autolayout.AutoLinearLayout>

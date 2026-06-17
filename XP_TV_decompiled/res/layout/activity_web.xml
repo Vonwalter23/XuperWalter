@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout android:orientation="horizontal" android:id="@id/mLayoutTitle" android:background="@mipmap/vod_help_center_navigation_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="120.0px">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:background="@mipmap/vod_image_help_center_back" android:layout_width="117.0px" android:layout_height="89.0px" android:layout_marginLeft="60.0px" android:layout_marginTop="13.0px" />
+        <TextView android:textSize="80.0px" android:textColor="@color/color_a8a8a8" android:gravity="center" android:layout_gravity="center" android:layout_width="810.0px" android:layout_height="wrap_content" android:layout_marginLeft="1198.0px" android:layout_marginTop="13.0px" android:text="@string/personal_help_center" android:includeFontPadding="false" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.module.view.MyWebView android:id="@id/mWebView" android:background="@color/color_00ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layerType="software" />
+        <com.module.view.LoadingView android:gravity="center" android:layout_gravity="center" android:id="@id/mLoadingView" android:visibility="gone" android:layout_width="100.0px" android:layout_height="100.0px" android:layout_centerInParent="true" />
+        <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/llHelpCenterNetFailed" android:background="@mipmap/vod_help_center_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:gravity="center" android:layout_gravity="center" android:background="@mipmap/vod_image_help_center_net_fail" android:layout_width="240.0px" android:layout_height="240.0px" />
+            <TextView android:textSize="24.0px" android:textColor="@color/color_c4c4c4" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:text="@string/help_center_net_fail_notice" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

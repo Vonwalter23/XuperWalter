@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="154.0dip" android:paddingRight="154.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0sp" android:textColor="@color/color_font_main" android:id="@id/mTvNoResultTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="199.0dip" android:text="@string/vod_search_no_result" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="19.0sp" android:textColor="@color/color_font_normal" android:id="@id/mTvHintNum1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="1. " android:layout_below="@id/mTvNoResultTitle" />
+    <TextView android:textSize="19.0sp" android:textColor="@color/color_font_normal" android:id="@id/mTvHint1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vod_search_no_result_hint1" android:layout_toRightOf="@id/mTvHintNum1" android:layout_alignTop="@id/mTvHintNum1" />
+    <TextView android:textSize="19.0sp" android:textColor="@color/color_font_normal" android:id="@id/mTvHintNum2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="2. " android:layout_below="@id/mTvHint1" />
+    <TextView android:textSize="19.0sp" android:textColor="@color/color_font_normal" android:id="@id/mTvHint2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vod_search_no_result_hint2" android:layout_toRightOf="@id/mTvHintNum2" android:layout_alignTop="@id/mTvHintNum2" />
+</RelativeLayout>

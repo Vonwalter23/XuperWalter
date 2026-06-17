@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout android:id="@id/rlTopicLayout" android:background="@drawable/sel_poster_nohalo" android:layout_width="225.0px" android:layout_height="330.0px" android:layout_marginTop="22.0px">
+        <ImageView android:id="@id/ivTopicImage" android:scaleType="fitXY" android:layout_centerHorizontal="true" style="@style/topic_item_image" />
+        <TextView android:textSize="24.0px" android:textColor="@color/color_vod_score" android:gravity="center_horizontal" android:id="@id/tvTopicGrade" android:background="@mipmap/icon_tag_score_bg" android:visibility="gone" android:layout_width="48.0px" android:layout_height="28.0px" android:includeFontPadding="false" android:layout_alignParentBottom="true" style="@style/marqueeText" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <TextView android:textSize="28.0px" android:textColor="@color/color_f5f5f5" android:gravity="center" android:id="@id/mTvTopicName" android:paddingTop="10.0px" android:paddingBottom="10.0px" android:visibility="invisible" android:layout_width="225.0px" android:layout_height="wrap_content" android:layout_marginBottom="22.0px" android:layout_below="@id/rlTopicLayout" android:layout_centerHorizontal="true" style="@style/marqueeText" />
+</com.zhy.autolayout.AutoRelativeLayout>

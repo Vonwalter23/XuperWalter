@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/mItemResult" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/mIvChannelIcon" android:layout_width="51.0dip" android:layout_height="30.0dip" android:layout_marginLeft="21.0dip" android:scaleType="fitXY" />
+    <TextView android:textSize="21.0sp" android:textColor="@color/color_font_main" android:ellipsize="marquee" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/mTextChannel" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+</LinearLayout>

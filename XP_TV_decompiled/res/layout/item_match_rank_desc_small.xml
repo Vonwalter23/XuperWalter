@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:layout_width="fill_parent" android:layout_height="140.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="40.0px" android:textStyle="bold" android:textColor="@color/color_font_main" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="138.0px" android:text="@string/match_rank_glossary" />
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="138.0px" android:layout_marginLeft="540.0px">
+        <com.live.view.match.MatchRankDesc android:layout_width="wrap_content" android:layout_height="wrap_content" app:descText="@string/match_rank_j" app:simplifyText="J" />
+        <com.live.view.match.MatchRankDesc android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0px" app:descText="@string/match_rank_d" app:simplifyText="D" />
+        <com.live.view.match.MatchRankDesc android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0px" app:descText="@string/match_rank_dif_pts" app:simplifyText="DIF.PTS." />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="138.0px" android:layout_marginLeft="880.0px">
+        <com.live.view.match.MatchRankDesc android:layout_width="wrap_content" android:layout_height="wrap_content" app:descText="@string/match_rank_v" app:simplifyText="V" />
+        <com.live.view.match.MatchRankDesc android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0px" app:descText="@string/match_rank_pf" app:simplifyText="PF" />
+        <com.live.view.match.MatchRankDesc android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0px" app:descText="@string/match_rank_pts" app:simplifyText="PTS" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="138.0px" android:layout_marginLeft="1220.0px">
+        <com.live.view.match.MatchRankDesc android:layout_width="wrap_content" android:layout_height="wrap_content" app:descText="@string/match_rank_e" app:simplifyText="E" />
+        <com.live.view.match.MatchRankDesc android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0px" app:descText="@string/match_rank_pc" app:simplifyText="PC" />
+        <com.live.view.match.MatchRankDesc android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoFrameLayout>

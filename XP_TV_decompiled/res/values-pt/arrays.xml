@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="play_setting_hd">
+        <item>UHD</item>
+        <item>HD+</item>
+        <item>HD</item>
+    </string-array>
+    <string-array name="play_setting_pip">
+        <item>Off</item>
+        <item>Trocar PiP</item>
+        <item>Adicionar ao PiP</item>
+    </string-array>
+    <string-array name="play_setting_play_ratio">
+        <item>Normal</item>
+        <item>Tela cheia</item>
+        <item>16:9</item>
+        <item>4:3</item>
+    </string-array>
+    <string-array name="play_setting_playratio">
+        <item>Normal</item>
+        <item>Tela Cheia</item>
+        <item>16:9</item>
+        <item>4:3</item>
+    </string-array>
+</resources>

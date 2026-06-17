@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="72.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:enabled="false" android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/um_interstitial_btn_detail" android:background="@drawable/umeng_btn_blue" android:focusable="false" android:clickable="false" android:layout_width="72.0dip" android:layout_height="28.0dip" android:text="@string/umeng_btn_detail" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:layout_toLeftOf="@id/um_interstitial_btn_detail" android:layout_marginEnd="4.0dip" android:layout_toStartOf="@id/um_interstitial_btn_detail">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/um_interstitial_iv_logo" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitXY" android:paddingEnd="4.0dip" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff252934" android:id="@id/um_interstitial_tv_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ff252934" android:id="@id/um_interstitial_tv_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

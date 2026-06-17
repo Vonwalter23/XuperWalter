@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog_brasiliptv" android:layout_width="865.0px" android:layout_height="541.0px">
+        <TextView android:textSize="28.0px" android:textColor="@color/color_ffffff" android:id="@id/daysForBind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="225.0px" android:text="@string/logout_dialog_tip" />
+        <com.zhy.autolayout.AutoLinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="183.0px">
+            <Button android:textSize="32.0px" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mBtnConfirm" android:text="@string/logout_confirm" style="@style/button_double_style" />
+            <Button android:textSize="32.0px" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mBtnCancel" android:layout_marginLeft="60.0px" android:text="@string/logout_cancel" style="@style/button_double_style" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>
