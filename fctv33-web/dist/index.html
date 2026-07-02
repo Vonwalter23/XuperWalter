@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FCTV33 - Tu portal de streaming de TV en vivo">
+    <meta name="theme-color" content="#0ea5e9">
+    <title>FCTV33 - TV en Vivo</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0ea5e9;
+            --dark-bg: #0d1117;
+            --dark-card: #161b22;
+            --dark-border: #30363d;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--dark-bg);
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--dark-bg); }
+        ::-webkit-scrollbar-thumb { background: var(--dark-border); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #484f58; }
+        .glow { box-shadow: 0 0 20px rgba(14, 165, 233, 0.3); }
+        .glow:hover { box-shadow: 0 0 30px rgba(14, 165, 233, 0.5); }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+        .channel-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .channel-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); }
+        .player-controls { transition: opacity 0.3s ease; }
+        button:focus-visible, a:focus-visible {
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
+        }
+        @keyframes pulse-live {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .animate-pulse-live { animation: pulse-live 1s ease-in-out infinite; }
+    </style>
+</head>
+<body x-data="app()" x-init="init()" class="min-h-screen">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-dark-400/95 backdrop-blur-md border-b border-dark-100">
+        <div class="px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <button @click="sidebarOpen = !sidebarOpen" class="p-2 rounded-lg hover:bg-dark-100 transition-colors lg:hidden">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center shadow-lg glow">
+                        <span class="text-white font-bold text-lg">FC</span>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-bold text-white">FCTV33</h1>
+                        <p class="text-xs text-gray-400">TV en Vivo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search -->
+            <div class="flex-1 max-w-md mx-4 hidden md:block">
+                <div class="relative">
+                    <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                    <input type="text" x-model="searchQuery" placeholder="Buscar canales..." 
+                        class="w-full pl-10 pr-4 py-2 bg-dark-300 border border-dark-100 rounded-xl text-sm text-white placeholder-gray-400 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-all">
+                </div>
+            </div>
+
+            <!-- User info -->
+            <div class="hidden sm:flex items-center gap-2 ml-4">
+                <div class="text-right">
+                    <p class="text-sm font-medium text-white">Usuario</p>
+                    <p class="text-xs text-green-400">● Premium</p>
+                </div>
+                <div class="w-9 h-9 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center text-white font-semibold">
+                    U
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile search -->
+        <div class="px-4 pb-3 md:hidden" x-show="showMobileSearch">
+            <div class="relative">
+                <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+                <input type="text" x-model="searchQuery" placeholder="Buscar canales..." 
+                    class="w-full pl-10 pr-4 py-2 bg-dark-300 border border-dark-100 rounded-xl text-sm text-white placeholder-gray-400 focus:outline-none focus:border-primary-500">
+            </div>
+        </div>
+    </header>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside :class="sidebarOpen ? 'fixed inset-0 z-50 bg-dark-400/95 backdrop-blur-md w-64' : 'hidden lg:block'" 
+               class="sticky top-[60px] h-[calc(100vh-60px)] w-64 border-r border-dark-100 overflow-y-auto">
+            <div class="p-4 flex items-center justify-between border-b border-dark-100 lg:hidden">
+                <h2 class="font-semibold text-white">Categorías</h2>
+                <button @click="sidebarOpen = false" class="p-2 rounded-lg hover:bg-dark-100">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav class="p-3">
+                <ul class="space-y-1">
+                    <template x-for="cat in categories" :key="cat.id">
+                        <li>
+                            <button @click="setCategory(cat.id); sidebarOpen = false"
+                                :class="activeCategory === cat.id ? 'bg-primary-500/20 text-primary-400 border border-primary-500/30' : 'text-gray-300 hover:bg-dark-100 hover:text-white'"
+                                class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-all">
+                                <span class="text-xl" x-text="cat.icon"></span>
+                                <span class="font-medium" x-text="cat.name"></span>
+                            </button>
+                        </li>
+                    </template>
+                </ul>
+            </nav>
+
+            <div class="p-4 border-t border-dark-100">
+                <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Enlaces Rápidos</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="flex items-center gap-2 text-sm text-gray-400 hover:text-primary-400 transition-colors">📺 Canales Favoritos</a></li>
+                    <li><a href="#" class="flex items-center gap-2 text-sm text-gray-400 hover:text-primary-400 transition-colors">🕐 Vistos Recientemente</a></li>
+                    <li><a href="#" class="flex items-center gap-2 text-sm text-gray-400 hover:text-primary-400 transition-colors">⚙️ Configuración</a></li>
+                </ul>
+            </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="flex-1 min-w-0">
+            <!-- Video Player -->
+            <div class="p-4">
+                <div class="relative aspect-video bg-black rounded-2xl overflow-hidden group" @mousemove="showControls = true" @mouseleave="isPlaying && (showControls = false)">
+                    <template x-if="!selectedChannel">
+                        <div class="absolute inset-0 flex items-center justify-center bg-dark-300">
+                            <div class="text-center">
+                                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-dark-100 flex items-center justify-center">
+                                    <span class="text-4xl">📺</span>
+                                </div>
+                                <p class="text-gray-400">Selecciona un canal para reproducir</p>
+                            </div>
+                        </div>
+                    </template>
+                    
+                    <template x-if="selectedChannel">
+                        <div class="relative w-full h-full">
+                            <video id="videoPlayer" class="w-full h-full" @click="togglePlay"></video>
+                            
+                            <!-- Channel Info Overlay -->
+                            <div class="absolute top-0 left-0 right-0 p-4 bg-gradient-to-b from-black/80 to-transparent" x-show="showControls">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <img :src="selectedChannel.logo" class="w-10 h-10 rounded-lg object-contain bg-white/10">
+                                        <div>
+                                            <h3 class="font-semibold text-white" x-text="selectedChannel.name"></h3>
+                                            <p class="text-xs text-primary-400">EN VIVO</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-1 px-3 py-1 bg-red-500 rounded-full">
+                                        <span class="w-2 h-2 bg-white rounded-full animate-pulse-live"></span>
+                                        <span class="text-sm font-semibold text-white">LIVE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Controls -->
+                            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent" x-show="showControls">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <button @click="togglePlay" class="p-2 rounded-lg hover:bg-white/10 text-white transition-colors">
+                                            <template x-if="!isPlaying">
+                                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                            </template>
+                                            <template x-if="isPlaying">
+                                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                                            </template>
+                                        </button>
+                                        <button @click="toggleMute" class="p-2 rounded-lg hover:bg-white/10 text-white transition-colors">
+                                            <template x-if="!isMuted">
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                                            </template>
+                                            <template x-if="isMuted">
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path></svg>
+                                            </template>
+                                        </button>
+                                    </div>
+                                    <button @click="toggleFullscreen" class="p-2 rounded-lg hover:bg-white/10 text-white transition-colors">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+            
+            <!-- Channel Grid -->
+            <div class="border-t border-dark-100">
+                <div class="px-4 py-3">
+                    <h2 class="text-lg font-semibold text-white">Todos los Canales</h2>
+                    <p class="text-sm text-gray-400" x-text="filteredChannels.length + ' canales disponibles'"></p>
+                </div>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 p-4">
+                    <template x-for="channel in filteredChannels" :key="channel.id">
+                        <div @click="selectChannel(channel)"
+                            :class="selectedChannel?.id === channel.id ? 'border-primary-500 ring-2 ring-primary-500/30' : 'border-transparent'"
+                            class="channel-card relative bg-dark-300 rounded-2xl overflow-hidden cursor-pointer border-2 transition-all">
+                            <div class="relative aspect-video bg-dark-400 flex items-center justify-center p-4">
+                                <img :src="channel.logo" :alt="channel.name" class="max-w-full max-h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="hidden w-16 h-16 rounded-xl bg-primary-500/20 items-center justify-center">
+                                    <span class="text-2xl font-bold text-primary-400" x-text="channel.name.charAt(0)"></span>
+                                </div>
+                                <div class="absolute top-2 right-2 flex items-center gap-1 px-2 py-1 bg-red-500 rounded-full text-xs font-semibold text-white">
+                                    <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                                    LIVE
+                                </div>
+                                <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                                    <div class="p-4 bg-primary-500 rounded-full">
+                                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <h3 class="font-semibold text-white truncate" x-text="channel.name"></h3>
+                                <p class="text-xs text-gray-400 capitalize" x-text="channel.category"></p>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+                
+                <template x-if="filteredChannels.length === 0">
+                    <div class="flex flex-col items-center justify-center py-20 text-center">
+                        <div class="w-20 h-20 rounded-full bg-dark-300 flex items-center justify-center mb-4">
+                            <span class="text-4xl">🔍</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-2">No se encontraron canales</h3>
+                        <p class="text-gray-400">Intenta con otro término de búsqueda</p>
+                    </div>
+                </template>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-dark-100 py-6 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center">
+                    <span class="text-white font-bold text-sm">FC</span>
+                </div>
+                <span class="text-gray-400 text-sm">FCTV33 © 2024</span>
+            </div>
+            <div class="flex items-center gap-6 text-sm text-gray-400">
+                <a href="#" class="hover:text-white transition-colors">Términos</a>
+                <a href="#" class="hover:text-white transition-colors">Privacidad</a>
+                <a href="#" class="hover:text-white transition-colors">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function app() {
+            return {
+                channels: [],
+                filteredChannels: [],
+                selectedChannel: null,
+                activeCategory: 'all',
+                searchQuery: '',
+                sidebarOpen: false,
+                showMobileSearch: false,
+                isPlaying: false,
+                isMuted: false,
+                showControls: true,
+                hls: null,
+                
+                categories: [
+                    { id: 'all', name: 'Todos', icon: '📺' },
+                    { id: 'sports', name: 'Deportes', icon: '⚽' },
+                    { id: 'news', name: 'Noticias', icon: '📰' },
+                    { id: 'entertainment', name: 'Entretenimiento', icon: '🎬' },
+                    { id: 'kids', name: 'Infantil', icon: '🧸' },
+                    { id: 'movies', name: 'Cine', icon: '🎥' },
+                    { id: 'music', name: 'Música', icon: '🎵' },
+                ],
+                
+                init() {
+                    this.channels = [
+                        { id: '1', name: 'ESPN', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/200px-ESPN_wordmark.svg.png', category: 'sports', url: '' },
+                        { id: '2', name: 'Fox Sports', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Fox_Sports_Logo.svg/200px-Fox_Sports_Logo.svg.png', category: 'sports', url: '' },
+                        { id: '3', name: 'CNN', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/CNN_logo_-_2019.svg/200px-CNN_logo_-_2019.svg.png', category: 'news', url: '' },
+                        { id: '4', name: 'MTV', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/MTV_Logo.svg/200px-MTV_Logo.svg.png', category: 'music', url: '' },
+                        { id: '5', name: 'Disney', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Disney_Channel_-_2019_Logo.svg/200px-Disney_Channel_-_2019_Logo.svg.png', category: 'kids', url: '' },
+                        { id: '6', name: 'HBO', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/HBO_logo_2018.svg/200px-HBO_logo_2018.svg.png', category: 'movies', url: '' },
+                        { id: '7', name: 'ESPN 2', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/200px-ESPN_wordmark.svg.png', category: 'sports', url: '' },
+                        { id: '8', name: 'FX', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Fox_Broadcasting_Company_Logo.svg/200px-Fox_Broadcasting_Company_Logo.svg.png', category: 'entertainment', url: '' },
+                    ];
+                    this.filterChannels();
+                },
+                
+                setCategory(id) {
+                    this.activeCategory = id;
+                    this.filterChannels();
+                },
+                
+                filterChannels() {
+                    this.filteredChannels = this.channels.filter(ch => {
+                        const matchesCategory = this.activeCategory === 'all' || ch.category === this.activeCategory;
+                        const matchesSearch = this.searchQuery === '' || ch.name.toLowerCase().includes(this.searchQuery.toLowerCase());
+                        return matchesCategory && matchesSearch;
+                    });
+                },
+                
+                selectChannel(channel) {
+                    this.selectedChannel = channel;
+                    this.isPlaying = true;
+                },
+                
+                togglePlay() {
+                    const video = document.getElementById('videoPlayer');
+                    if (video) {
+                        if (video.paused) {
+                            video.play();
+                            this.isPlaying = true;
+                        } else {
+                            video.pause();
+                            this.isPlaying = false;
+                        }
+                    }
+                },
+                
+                toggleMute() {
+                    const video = document.getElementById('videoPlayer');
+                    if (video) {
+                        video.muted = !video.muted;
+                        this.isMuted = video.muted;
+                    }
+                },
+                
+                toggleFullscreen() {
+                    const container = document.querySelector('.aspect-video');
+                    if (container) {
+                        if (document.fullscreenElement) {
+                            document.exitFullscreen();
+                        } else {
+                            container.requestFullscreen();
+                        }
+                    }
+                }
+            }
+        }
+        
+        document.addEventListener('alpine:init', () => {
+            const input = document.querySelector('input[type="text"]');
+            if (input) {
+                input.addEventListener('input', (e) => {
+                    const app = document.querySelector('[x-data]').__x.$data;
+                    app.searchQuery = e.target.value;
+                    app.filterChannels();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
