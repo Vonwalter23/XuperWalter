@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoFrameLayout android:background="@drawable/sel_vod_selection" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="40.0px" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mTextTitle" android:duplicateParentState="true" android:layout_width="150.0px" android:layout_height="72.0px" />
-    <ImageView android:layout_gravity="center" android:id="@id/mImgPlaying" android:visibility="gone" android:layout_width="23.0px" android:layout_height="30.0px" android:src="@mipmap/icon_play_index_selection" />
-    <ImageView android:id="@id/mIvSelect" android:visibility="gone" android:duplicateParentState="true" android:layout_width="24.0px" android:layout_height="24.0px" android:layout_marginLeft="4.0px" android:layout_marginTop="4.0px" android:src="@drawable/sel_episode_select_status" />
-    <com.module.view.DownloadStatusView android:layout_gravity="end|bottom|center" android:id="@id/mIvDownload" android:visibility="gone" android:layout_width="24.0px" android:layout_height="24.0px" android:layout_marginRight="4.0px" android:layout_marginBottom="4.0px" />
-</com.zhy.autolayout.AutoFrameLayout>

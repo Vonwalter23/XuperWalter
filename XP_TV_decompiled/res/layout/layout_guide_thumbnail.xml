@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/mIvArrow" android:tag="mThumbnailArrow" android:focusable="true" android:layout_width="160.0px" android:layout_height="144.0px" android:src="@drawable/ic_guide_thumbnail_arrow" />
-    <TextView android:textSize="32.0px" android:textColor="@color/color_ffffff" android:gravity="center_vertical" android:id="@id/mTextContent" android:tag="mTextContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="1142.0px" android:text="@string/dialog_guide_thumbnail" android:layout_toRightOf="@id/mIvArrow" android:layout_centerVertical="true" />
-</com.zhy.autolayout.AutoRelativeLayout>

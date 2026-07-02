@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_focused="true" android:drawable="@drawable/shape_personal_bg_bnt_focused" />
-    <item android:drawable="@color/color_00ffffff" />
-</selector>

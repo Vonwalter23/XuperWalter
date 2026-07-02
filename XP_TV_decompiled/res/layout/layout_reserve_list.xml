@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:focusable="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="53.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="21.0sp" android:textColor="@color/color_ffffff" android:ellipsize="marquee" android:id="@id/tv_content" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="47.0dip" android:text="Saiba Mais" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
-    <TextView android:textSize="13.0sp" android:textColor="@color/color_858d94" android:ellipsize="marquee" android:id="@id/tv_time_channel" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="26.0dip" android:text="14:30-15:40 Fight" android:singleLine="true" android:layout_below="@id/tv_content" />
-    <ImageView android:id="@id/iv_status" android:visibility="visible" android:layout_width="21.0dip" android:layout_height="19.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="26.0dip" android:layout_alignParentRight="true" />
-</RelativeLayout>

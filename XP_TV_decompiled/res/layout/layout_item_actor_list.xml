@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:background="@drawable/selector_actor_item_list" android:layout_width="fill_parent" android:layout_height="160.0px"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center_vertical" android:id="@id/mImgActorHeader" android:layout_width="90.0px" android:layout_height="128.0px" android:layout_marginLeft="50.0px" android:src="@drawable/bg_head_placehoder" android:scaleType="fitXY" />
-    <TextView android:textSize="28.0px" android:textColor="@color/color_font_main" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/mTextActorName" android:paddingLeft="24.0px" android:paddingRight="30.0px" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
-</com.zhy.autolayout.AutoLinearLayout>

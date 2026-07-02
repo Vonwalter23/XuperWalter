@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoRelativeLayout android:gravity="center_horizontal" android:background="@drawable/bg_login_failed" android:layout_width="980.0px" android:layout_height="540.0px"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_width="100.0px" android:layout_height="100.0px" android:layout_marginTop="51.0px" android:src="@mipmap/icon_failed_cry" android:layout_centerHorizontal="true" />
-    <TextView android:textSize="34.0px" android:textColor="@color/color_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="176.0px" android:text="@string/login_failed_limit" android:layout_centerHorizontal="true" />
-    <TextView android:textSize="28.0px" android:textColor="@color/color_ffffff" android:paddingLeft="82.0px" android:paddingRight="82.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="269.0px" android:text="@string/number_limit_tips" android:paddingHorizontal="82.0px" />
-    <Button android:textSize="32.0px" android:textColor="@color/color_ffffff" android:id="@id/mBtnReLogin" android:background="@drawable/bg_btn_relogin" android:layout_width="380.0px" android:layout_height="68.0px" android:layout_marginBottom="58.0px" android:text="@string/re_login" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAllCaps="false" />
-</com.zhy.autolayout.AutoRelativeLayout>

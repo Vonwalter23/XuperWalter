@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/live_infor_hd_bg" android:clipChildren="false" android:layout_width="180.0px" android:layout_height="133.0px"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/mSubtitleRec" android:padding="6.0px" android:scrollbars="none" android:clipChildren="false" android:descendantFocusability="afterDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-</com.zhy.autolayout.AutoLinearLayout>

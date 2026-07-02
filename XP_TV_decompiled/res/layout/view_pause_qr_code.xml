@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.adimage.view.TraceAdImageView android:id="@id/mIvQrCode" android:paddingLeft="10.0px" android:paddingTop="10.0px" android:paddingRight="10.0px" android:layout_width="200.0px" android:layout_height="200.0px" android:layout_marginRight="10.0px" android:scaleType="fitXY" />
-    <TextView android:textSize="9.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/mTvQrDesc" android:paddingLeft="10.0px" android:paddingRight="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:layout_marginBottom="5.0px" android:text="@string/ad_scan_for_more_details" />
-</merge>

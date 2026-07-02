@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoRelativeLayout android:id="@id/mLayoutNation" android:background="@drawable/selector_item_nation" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="48.0px"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/mImageSelected" android:layout_width="20.0px" android:layout_height="15.0px" android:layout_marginLeft="20.0px" android:src="@drawable/icon_nation_selected" android:layout_centerVertical="true" />
-    <TextView android:textSize="28.0px" android:textColor="@color/color_333333" android:ellipsize="marquee" android:gravity="center|left" android:id="@id/mTextNation" android:layout_width="220.0px" android:layout_height="fill_parent" android:layout_marginLeft="50.0px" android:text="Armenia" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
-    <TextView android:textSize="28.0px" android:textColor="@color/color_333333" android:gravity="center|right" android:id="@id/mTextNationCode" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="20.0px" android:text="+374" android:singleLine="true" android:layout_alignParentRight="true" />
-</com.zhy.autolayout.AutoRelativeLayout>

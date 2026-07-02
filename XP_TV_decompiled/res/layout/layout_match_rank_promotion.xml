@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="40.0px" android:textColor="@color/color_font_main" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="90.0px" android:layout_marginLeft="40.0px" android:text="@string/match_rank_playoff" />
-    <com.live.view.match.PlayOffView android:id="@id/mPovPromotion" android:layout_width="fill_parent" android:layout_height="700.0px" android:layout_marginLeft="40.0px" android:layout_marginRight="40.0px" />
-    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="65.0px" layout="@layout/item_match_rank_desc_large" />
-</com.zhy.autolayout.AutoLinearLayout>

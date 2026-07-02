@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:id="@id/mNavigationPanel" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.live.view.MatchNavBar android:orientation="horizontal" android:id="@id/mMatchNavBar" android:layout_width="fill_parent" android:layout_height="60.0px" android:layout_marginLeft="90.0px" android:layout_marginRight="90.0px" />
-    <com.widget.custom.CustomViewPager android:id="@id/mVpNav" android:layout_width="fill_parent" android:layout_height="960.0px" android:layout_marginTop="30.0px" />
-</com.zhy.autolayout.AutoLinearLayout>

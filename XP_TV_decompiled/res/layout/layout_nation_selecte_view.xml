@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center_vertical" android:layout_width="21.0px" android:layout_height="14.0px" android:layout_marginLeft="23.0px" android:src="@drawable/icon_nation_arrow" />
-    <ImageView android:layout_gravity="center_vertical" android:id="@id/mImageLine" android:layout_width="1.0px" android:layout_height="38.0px" android:layout_marginLeft="24.0px" android:src="@color/color_5c6066" />
-    <TextView android:textSize="28.0px" android:textColor="@color/color_ffffff" android:gravity="center|left" android:id="@id/mTextNationName" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="21.0px" android:text="Brazil" />
-</com.zhy.autolayout.AutoLinearLayout>

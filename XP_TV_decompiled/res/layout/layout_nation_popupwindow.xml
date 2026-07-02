@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/bg_nation_popup" android:layout_width="360.0px" android:layout_height="640.0px"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/mRecyclerNation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0px" />
-</com.zhy.autolayout.AutoLinearLayout>

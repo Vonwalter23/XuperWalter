@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_brasiliptv" android:layout_width="820.0px" android:layout_height="wrap_content">
-        <TextView android:textSize="36.0px" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/dialog_title_bg" android:layout_width="fill_parent" android:layout_height="100.0px" android:text="@string/exit_tips" />
-        <TextView android:textSize="28.0px" android:textColor="#ffffffff" android:gravity="center" android:id="@id/mContentText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0px" android:layout_marginTop="30.0px" android:layout_marginRight="40.0px" android:text="@string/exit_app_content" />
-        <Button android:layout_gravity="center_horizontal" android:id="@id/mContinueUseBtn" android:layout_marginTop="45.0px" android:layout_marginBottom="40.0px" android:text="@string/exit_continue_use" style="@style/button_single_style" />
-    </com.zhy.autolayout.AutoLinearLayout>
-</com.zhy.autolayout.AutoLinearLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.common.utils.mark.home.FreeRooView android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.open.leanback.widget.VerticalGridView android:id="@id/mRecyclerFreeArea" android:paddingBottom="67.0dip" android:focusable="false" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.module.view.LoadingView android:layout_gravity="center" android:id="@id/mLoadingView" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" />
-</com.common.utils.mark.home.FreeRooView>

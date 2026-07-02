@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_focused="true" android:drawable="@color/transparent" />
-    <item android:state_selected="true" android:drawable="@color/transparent" />
-    <item android:drawable="@drawable/shape_home_live_channel_icon_bg" />
-</selector>

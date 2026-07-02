@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_audio_subtitle_bg" android:focusable="true" android:layout_width="230.0px" android:layout_height="50.0px" android:layout_marginLeft="8.0px"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/ivIcon" android:layout_width="20.0px" android:layout_height="20.0px" android:layout_marginLeft="25.0px" android:src="@drawable/selector_audio_select" />
-    <TextView android:textSize="24.0px" android:textColor="@color/color_font_normal" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/tvName" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0px" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
-</com.zhy.autolayout.AutoLinearLayout>

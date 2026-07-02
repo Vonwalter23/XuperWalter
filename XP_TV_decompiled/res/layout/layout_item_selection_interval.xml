@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoFrameLayout android:background="@drawable/sel_vod_category" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="32.0px" android:textColor="@color/text_filter_color" android:gravity="center" android:id="@id/mTextTitle" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="50.0px" android:minWidth="150.0px" />
-</com.zhy.autolayout.AutoFrameLayout>

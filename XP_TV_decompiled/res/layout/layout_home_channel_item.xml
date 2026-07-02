@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="67.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:gravity="center" android:id="@id/mIvChannelIcon" android:background="@drawable/selector_home_live_channel_icon_bg" android:layout_width="67.0dip" android:layout_height="67.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="13.0dip" />
-    <ImageView android:layout_gravity="center" android:id="@id/mIvPlay" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="17.0dip" android:layout_marginRight="13.0dip" android:scaleType="fitXY" />
-    <TextView android:textSize="19.0sp" android:ellipsize="marquee" android:id="@id/mTvChannelName" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:marqueeRepeatLimit="marquee_forever" />
-</LinearLayout>

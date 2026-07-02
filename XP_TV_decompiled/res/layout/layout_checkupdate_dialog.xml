@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/base_dialog_root_view" android:background="@drawable/bg_dialog" android:layout_width="750.0px" android:layout_height="450.0px"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="30.0px" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/layout_double_dialog_msg_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="10.0" />
-</com.zhy.autolayout.AutoLinearLayout>

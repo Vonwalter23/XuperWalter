@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="80.0px" android:layout_height="wrap_content">
-        <ImageView android:id="@id/mIvPlayer" android:layout_width="80.0px" android:layout_height="80.0px" />
-        <TextView android:textSize="24.0px" android:textColor="@color/color_font_main" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/mPlayerName" android:layout_width="140.0px" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:singleLine="true" />
-    </com.zhy.autolayout.AutoLinearLayout>
-    <TextView android:textSize="28.0px" android:gravity="center" android:id="@id/mPlayerNo" android:layout_width="48.0px" android:layout_height="48.0px" android:layout_marginLeft="-30.0px" android:layout_marginTop="10.0px" />
-</merge>

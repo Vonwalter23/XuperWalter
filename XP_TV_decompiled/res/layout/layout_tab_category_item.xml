@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/mRlCategoryItem" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="67.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="20.0sp" android:textColor="@color/color_f5f5f5" android:ellipsize="marquee" android:gravity="center|left" android:id="@id/mTvCategoryName" android:layout_width="147.0dip" android:layout_height="wrap_content" android:layout_marginLeft="62.0dip" android:singleLine="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" />
-    <com.module.view.FixGifImageView android:id="@id/mIvDrawable" android:visibility="gone" android:layout_width="147.0dip" android:layout_height="wrap_content" android:layout_marginLeft="62.0dip" android:scaleType="fitStart" android:layout_centerVertical="true" />
-    <ImageView android:id="@id/mIvLock" android:visibility="invisible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/live_tab_lock" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-</RelativeLayout>

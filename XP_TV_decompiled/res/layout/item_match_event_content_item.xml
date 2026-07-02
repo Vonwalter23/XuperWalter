@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="10.0px" android:paddingBottom="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/ivIcon" android:layout_width="26.0px" android:layout_height="33.0px" android:src="@drawable/icon_match_event_leave" android:scaleType="centerInside" />
-    <com.module.view.AutoFocusedTextView android:textSize="25.0px" android:textColor="@color/color_ffffff" android:gravity="left" android:id="@id/tvName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0px" android:text="OJEDA, Luis" style="@style/marqueeText" />
-</com.zhy.autolayout.AutoLinearLayout>
